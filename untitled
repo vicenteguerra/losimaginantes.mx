@@ -1,0 +1,341 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: #993311;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* GENERAL */
+
+body {
+background-color: #BAE5EC;
+font-family: arial, sans serif;
+font-size:12px;
+}
+#content-wrapper {
+width:960px;
+margin: 10px auto;
+background-color:white;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+overflow:hidden;
+display:block;
+}
+
+#header {
+padding: 5px 20px;
+}
+#logo img {
+float:left;
+width: 270px;
+height: 150px;
+padding: 10px 0;
+}
+ul#menu-top {
+height:25px;
+width:220px;
+margin-top:0;
+float:right;
+}
+ul#menu-top li a {
+list-style-type:none;
+text-decoration:none;
+float:left;
+color: #EB2F57;
+font-weight:bold;
+padding: 7px 10px;
+}
+ul#menu-top li a:hover {
+text-decoration:none;
+background-color: #EB2F57;
+color:#fff;
+font-weight:bold;
+padding: 7px 10px;
+}
+ul#menu {
+margin-top: 60px;
+float:right;
+width: 45%;
+
+height:30px;
+background-image: url(images/menu_bg.png);
+background-repeat: repeat-x;
+background-color: #EB2F57;
+}
+ul#menu li a{
+float:right;
+list-style-type:none;
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+padding: 10px 20px;
+border-left: 1px solid white;
+}
+ul#menu li a:hover {
+
+/*background-color: 8ed6ff; padding: 10px 20px; */
+color: #222222;
+background-color: #BB2F57;
+
+}
+
+#nivoslider {
+float:left;
+margin: 10px 20px;
+width: 920px;
+height: 310px;
+}
+#featured {
+float:left;
+width: 918px;
+height: 100px;
+margin: 0 20px;
+border: 1px solid #7b7b7b;
+border-right:none;
+background-image: url(images/destacado_bg.png);
+background-repeat: repeat-x;
+background-color: #dedddd;
+}
+.item {
+width: 295px;
+padding: 5px;
+height: 90px;
+overflow:hidden;
+border-right: 1px solid #7b7b7b;
+float:left;
+}
+.item h3 {
+font-family: arial, sans serif;
+font-weight:bold;
+font-size: 16px;
+line-height:30px;
+color: #7b7b7b;
+text-align:center;
+}
+.item p {
+font-family: arial, sans serif;
+font-weight:bold;
+font-size: 12px;
+line-height:20px;
+color: #7b7b7b;
+text-align:center;
+}
+
+.news {
+width: 293px;
+padding: 20px 0 10px 20px;
+float:left;
+}
+.news  h2 {
+font-family: arial, sans serif;
+font-size: 22px;
+margin-top:10px;
+color: #7b7b7b;
+}
+.news p {
+font-family: arial, sans serif;
+font-size: 12px;
+line-height:18px;
+color: #7b7b7b;
+}
+
+#sidebar {
+width: 293px;
+padding: 20px 20px 10px 0px;
+float:right;
+}
+#sidebar h3 {
+font-family: arial, sans serif;
+font-size: 18px;
+margin-bottom:10px;
+color: #7b7b7b;
+}
+#sidebar ul {
+list-style-type:none;
+}
+#sidebar ul li {
+padding: 5px 10px;
+border-bottom: 1px solid #7b7b7b;
+color: #7b7b7b;
+}
+
+#footer {
+float:left;
+background: #e6e6e6;
+width: 920px;
+padding: 20px;
+height:100px;
+}
+ul.social {
+list-style-type:none;
+float:right;
+width:150px;
+}
+ul.social li{
+float:left;
+}
+
+
+
+---------------------------
+
+
+
+index.php
+
+<?php get_header(); ?>
+<div id="nivoslider">
+	<img src="http://lorempixum.com/g/920/310" />
+</div><!-- end of nivoslider -->
+<div id="featured">
+	<div class="item">
+		<h3>Quiere saber mas?</h3>
+		<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+	</div><!-- end of item" -->
+		<div class="item">
+		<h3>Quiere saber mas?</h3>
+		<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+	</div><!-- end of item" -->
+		<div class="item">
+		<h3>Quiere saber mas?</h3>
+		<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+	</div><!-- end of item" -->
+</div><!-- end of featured -->
+<div class="news">
+	<img src="http://lorempixum.com/g/290/130" />
+	<h2>Un post que se destaca...</h2>
+	<p>Sed pharetra risus eu nisi molestie aliquet. Donec ipsum eros, sodales ut convallis ac, posuere vitae orci. <a href="#">Leer más</a></p>
+</div>
+<div class="news">
+	<img src="http://lorempixum.com/g/290/130" />
+	<h2>Un post que se destaca...</h2>
+	<p>Sed pharetra risus eu nisi molestie aliquet. Donec ipsum eros, sodales ut convallis ac, posuere vitae orci. <a href="#">Leer más</a></p>
+</div>
+<div class="news">
+	<img src="http://lorempixum.com/g/290/130" />
+	<h2>Un post que se destaca...</h2>
+	<p>Sed pharetra risus eu nisi molestie aliquet. Donec ipsum eros, sodales ut convallis ac, posuere vitae orci. <a href="#">Leer más</a></p>
+</div>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
+
+
+
+-------------
+
+
+header.php
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<title>
+	<?php if ( is_home() ) { ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?><?php } ?>
+	<?php if ( is_author() ) { ?><?php bloginfo('name'); ?> | Archivo por autor<?php } ?>
+	<?php if ( is_single() ) { ?><?php wp_title(''); ?> | <?php wp_title(''); ?><?php } ?>
+	<?php if ( is_page() ) { ?><?php bloginfo('name'); ?> | <?php wp_title(''); ?><?php } ?>
+	<?php if ( is_category() ) { ?><?php bloginfo('name'); ?> | Archivo por Categoria | <?php single_cat_title(); ?><?php } ?>
+	<?php if ( is_month() ) { ?><?php bloginfo('name'); ?> | Archivo por Mes | <?php the_time('F'); ?><?php } ?>
+	<?php if ( is_search() ) { ?><?php bloginfo('name'); ?> | Resultados<?php } ?>
+	<?php if (function_exists('is_tag')) { if ( is_tag() ) { ?><?php bloginfo('name'); ?> | Archivo por Tag | <?php  single_tag_title("", true); } } ?>
+</title>
+<?php wp_head(); ?>
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+</head>
+<body>
+	<div id="content-wrapper">
+		<div id="header">
+			<div id="logo">
+				<img src="http://localhost/wordpress/wp-content/themes/atmc/images/home.png" />
+			</div><!-- end of logo -->
+			<!--<ul id="menu-tope">
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+			</ul> -->
+			<ul id="menu">
+				<li><a href="#">Contacto</a></li>
+				<li><a href="#">Resenas</a></li>
+				<li><a href="#">Editorial</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Inicio</a></li>
+			</ul>
+		</div> <!-- end of header -->
+
+		---------------------
+
+sidebar.php
+
+
+<div id="sidebar">
+<h3>Ultimas noticias</h3>
+<ul>
+	<li>Una noticia en la sidebar<br />Por admin</li>
+	<li>Una noticia en la sidebar<br />Por admin</li>
+	<li>Una noticia en la sidebar<br />Por admin</li>
+	<li>Una noticia en la sidebar<br />Por admin</li>
+</ul>
+</div><!-- end of sidebar -->
+
+-------------------------
+
+footer.php
+
+
+<div id="footer">
+	<ul class="social">
+		<li><a href="#"><img src="http://lorempixum.com/g/40/40" /></a></li>
+		<li><a href="#"><img src="http://lorempixum.com/g/40/40" /></a></li>
+		<li><a href="#"><img src="http://lorempixum.com/g/40/40" /></a></li>
+	</ul>
+</div><!-- end of footer -->
+</div><!-- end of content-wrapper -->
+<?php wp_footer(); ?>
+</body>
+</html>

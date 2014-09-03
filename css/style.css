@@ -1,0 +1,1405 @@
+/* COLORES  
+
+#0c0c32   Azul casi negro
+#b0e7e3   Azul clarito
+#c73157   Rosa Imaginante
+
+
+ COLORES */
+
+
+
+/* RESET*/
+#menu, #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* FIN RESET */
+
+
+@font-face {
+  font-family: FiraSansRegular;
+  src: url("http://losimaginantes.mx/dev/fonts/firasans-master/FiraSans3105/OTF/FiraSans-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: FiraSansExtraLight;
+  src: url("http://losimaginantes.mx/dev/fonts/firasans-master/FiraSans3105/OTF/FiraSans-ExtraLight.otf") format("opentype");
+}
+
+header{
+  margin-bottom: -25px;
+}
+
+#contenedorPublicidad{
+  width: 100%;
+  text-align: center;
+  background-color: #eee;
+}
+
+/*  -------- PUBLICIDAD HEADER  --------- */ 
+
+/*  ---- SMARTHPHONE ----*/
+
+@media only screen and (max-width: 590px){
+   #publicidadL{
+    background-image: url("http://lorempixel.com/300/65/");
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 65px;
+    background-color: #0c0c32;
+    display: inline-block;
+  } 
+   #publicidadR{
+    visibility: hidden;
+  } 
+
+}
+
+/*  ---- TABLETS ----*/
+
+@media only screen and (min-width: 591px) and ( max-width: 1179px) {
+  #publicidadL{
+    background-image: url("http://lorempixel.com/550/120/");
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 550px;
+    height: 120px;
+    background-color: #0c0c32;
+    display: inline-block;
+  } 
+   #publicidadR{
+    visibility: hidden;
+  } 
+}
+
+/*  ---- NORMAL  ----*/
+
+@media only screen and ( min-width: 1180px) {
+   #publicidadL{
+    background-image: url("http://lorempixel.com/550/120/");
+    display: inline-block;
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 550px;
+    height: 120px;
+
+  } 
+
+  #publicidadR{
+    display: inline-block;
+    background-image: url("http://lorempixel.com/550/120/");
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 550px;
+    height: 120px;
+    
+  } 
+}
+
+
+
+
+/*  -------- TERMINA PUBLICIDAD HEADER  --------- */ 
+
+
+#publicidad2{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  width: 90%;
+  height: 120px;
+  background-color: #0c0c32;
+  display: inline-block;
+}
+ 
+ /* Barra Transparente */ 
+
+#SuperiorMenu{
+  margin-bottom: -25px;
+  background-color: #eee;
+  height: 26px;
+  opacity: 0.8;
+}
+
+
+#menu{
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: -25px;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+}
+
+#menuIn{
+  color: #fff;
+  margin-top: 25px;
+  height: 50px;
+  width: 100%;
+  background-color: #0c0c32;
+  display: inline-block;
+}
+
+
+#logo{
+  vertical-align: center;
+  position: absolute;
+  margin-left: 6%;
+ background-color: #fff;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  width:100px;
+  height:100px;
+  margin-top: -79px;
+  display: block;
+  border-radius: 80px;
+}
+
+#logo img{
+  margin: 5px 5px;
+}
+
+
+/*  ------------------------------- - - - NAV MENU - - - --------------------------------- */
+
+@media only screen and ( max-width: 768px) {  /*  ---------- MOVILES ---------  */ 
+
+
+    #menuInL li ul
+    {
+        z-index: 3;
+        display: none;
+        position: relative;
+        top: 100%;
+        margin-top: 0px;
+    }
+        #menuInL li:hover ul
+        {
+            display: inline;
+        }
+
+
+  #lmenu{
+    display: block;
+    top: 35px;
+  }
+
+  #lmenu a {
+    float: right;
+    height: 10px;
+    margin-right:  -30px;  /* ICONO */
+    background-color: #0c0c32;
+    padding: 12px 18px;
+    color: #fff;
+    width: 100%;
+    letter-spacing: 1px;
+    font: 12px FiraSansRegular;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: right;
+  }
+
+  #menuInL img{
+    margin-top: 3px;
+    height: 20px;
+    width: auto;
+  }
+
+  #menuInL
+    {
+        text-align: right;
+        position: relative;
+        float: right;
+        margin-right: 30px;  /* ICONO MENU */
+        margin-top: 12px;
+        width: 150px;
+    }
+        #menuInL > a
+        {
+          display: none;
+        }
+        #menuInL li
+    {
+        position: relative;
+    }
+        #menuInL:not( :target ) > a:first-of-type,
+        #menuInL:target > a:last-of-type
+        {
+            display: block;
+        }
+ 
+
+
+    /* first level */
+ 
+    #menuInL > ul
+    { 
+        height: 30px;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+        #menuInL:target > ul
+        {
+            display: block;
+        }
+        #menuInL > ul > li
+        {
+            width: 100%;
+            height: 100%;
+            float: right;
+
+        }
+ 
+    /* second level */
+ 
+    #menuInL li ul
+    {
+        position: static;
+    }
+
+
+    /* SUBMENU  */
+
+    #lmenu ul {
+        z-index: 2;
+        _margin: 0; /*IE6 only*/
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 30px;
+        left: 150px;    
+        transition: all .2s ease-in-out;
+
+    }
+
+    #lmenu li{
+
+    }
+
+    #lmenu li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+    }
+
+    #lmenu ul ul {
+        top: 0;
+        _margin: 0; /*IE6 only*/   
+    }
+
+    #lmenu ul li {
+        float: none;
+        display: block;
+        border: 0;
+        _line-height: 0; /*IE6 only*/
+
+    }
+
+    #lmenu ul li a{
+
+      padding-bottom: 25px;
+      margin-top: -30px;
+      margin-bottom: 10px;
+    }
+
+    #lmenu ul li a:last-child {   
+
+    }
+
+    #lmenu ul a {   
+        margin-right: 156px; /* ICONO */
+        margin-top: 0px;
+        width: 80%;
+        background-color: #0b0b3b;
+        opacity: 1;
+        height: 8px;
+
+        _height: 8px; /*IE6 only*/
+        white-space: nowrap;
+        font: 10px FiraSansExtraLight;
+        text-align: right;
+    }
+
+    #lmenu ul a:hover {
+
+        color: #ddd;
+
+    }
+
+    /*Termina Submenu */
+
+
+
+}
+ /*  ---------- TERMINA  MOVILES ---------  */ 
+
+
+@media screen and (min-width: 769px) {  /*  ---------- NORMAL ---------  */ 
+
+  #lmenu li {
+    float: left;
+    /*border-right: 1px solid #222; */
+    /*box-shadow: 1px 0 0 #444; */
+    position: relative;
+}
+
+  #mostrar{
+    display: none;
+  }
+
+  #ocultar{
+    display: none;
+  }
+
+  #menuInL{
+  background: #f00;
+  margin-left: 20%;
+  }
+
+  #lmenu a {
+    float: left;
+    padding: 14px 22px;
+    color: #fff;
+    letter-spacing: 1px;
+    font: 14px FiraSansRegular;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  #lmenu a:hover{
+    color: #b0e7e3;
+  }
+
+    /* SUBMENU  */
+
+    #lmenu ul {
+        z-index: 3;
+        _margin: 0; /*IE6 only*/
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 50px;
+        left: 0;    
+        transition: all .2s ease-in-out;
+
+    }
+
+    #lmenu li:hover > ul {
+        z-index: 3;
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+    }
+
+    #lmenu ul ul {
+      z-index: 3;
+        top: 0;
+        _margin: 0; /*IE6 only*/   
+    }
+
+    #lmenu ul li {
+      z-index: 3;
+        float: none;
+        display: block;
+        border: 0;
+        _line-height: 0; /*IE6 only*/
+
+    }
+
+    #lmenu ul li:last-child { 
+    z-index: 3;  
+        box-shadow: none;    
+    }
+
+    #lmenu ul a {    
+      z-index: 3;
+        margin-left: -35px;
+        margin-top: 0px;
+        width: 140px;
+        background-color: #0b0b3b;
+        opacity: 1;
+        height: 10px;
+        _height: 10px; /*IE6 only*/
+        white-space: nowrap;
+        font: 12px FiraSansExtraLight;
+        text-align: left;
+    }
+
+    #lmenu ul a:hover {
+        background-color: #005;
+        color: #fff;
+
+    }
+
+    /*Termina Submenu */
+
+}
+
+ /*  ---------- TERMINA  NORMAL ---------  */ 
+ /*  ------------------------------- - - - TERMINA NAV MENU - - - --------------------------------- */
+
+
+
+#slide{
+  width: 100%;
+  
+  background-color: #B0E7E3;
+  height: 400px;
+}
+
+
+.slideFixed{
+  margin-top: 85px;
+}
+
+.principal{
+  background-color: #eee;
+  height: 100px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+
+
+.mainFixed{
+  margin-top: 100px;
+}
+
+.fixed { 
+  
+  position: fixed; top: 0px; }
+
+
+/*                           -----------  Publicaciones index  ------------ */ 
+
+/*  ---- SMARTHPHONE ----*/
+
+@media only screen and (max-width: 750px){
+   
+    #publicacion{
+      margin-top: 80px;
+      margin-bottom: 40px;
+      margin-left:3px;
+      margin-right:3px;
+      padding-top: 40px;
+      height: 220px;
+      width: 280px;
+      display: inline-block;
+    }
+
+    #publicacion img{
+      height: 220px;
+      width: 280px;
+    }
+
+    #publicaciones{
+  display: inline-block;
+    height: auto;
+    width: 100%;
+    background-color: #eee;
+
+}
+
+    #contenedorPublicaciones{
+      margin-top: -80px;
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    .textoPublicacion{
+
+  height: 130px;
+  width: 100%;
+  display: inline-block;
+  margin-top: -4px;
+  background-color: #0c0c32;
+  }
+}
+
+/*  ---- TERMINA SMARTHPHONE ----*/
+
+
+
+@media only screen and ( min-width: 751px) and  ( max-width: 1125px) {
+  
+  #publicacion{
+    margin-top: 50px;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+    height: 260px;
+    width: 330px;
+    display: inline-block;
+      padding-bottom: 60px;
+      padding-top: 60px;
+  }  
+
+  #publicaciones{
+  display: inline-block;
+    height: auto;
+    width: 100%;
+    background-color: #eee;
+
+}
+
+  #contenedorPublicaciones{
+    margin-top: -60px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  
+  .textoPublicacion{
+  
+  height: 130px;
+  width: 100%;
+  display: inline-block;
+  margin-top: -4px;
+  background-color: #0c0c32;
+  }
+}
+
+@media only screen and ( min-width: 1126px)  {
+  #publicacion{
+    margin-top: 50px;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+    height: 260px;
+    width: 330px;
+    display: inline-block;
+      padding-bottom: 40px;
+  }  
+
+  #publicaciones{
+  display: inline-block;
+    height: auto;
+    width: 100%;
+    background-color: #eee;
+
+}
+
+  #contenedorPublicaciones{
+    margin-top: 0px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  
+  .textoPublicacion{
+  
+  height: 130px;
+  width: 100%;
+  display: inline-block;
+  margin-top: -4px;
+  background-color: #0c0c32;
+  }
+}
+
+
+/*                         -----------  TEMRINA Publicaciones index  ------------ */ 
+
+/* -------- PUBLICIDAD ------------ */
+
+#publicidad-footer{
+  height: 240px;
+  width: 100%;
+  display: inline-block;
+  background-color: #b0e7e3;
+  margin-bottom: -5px;
+}
+
+/* ------- TEMRINA PUBLICIDAD ------------ */
+
+
+
+
+/*  ----------------------------------- FOOTER  ----------  */
+
+@media screen and (max-width:768px) {  /*  ---- VERSION SMARTHPHONE ---- */
+   footer{
+    display: inline-block;
+    color: #fff;
+    height: 120px;
+    width: 100%;
+    margin-top: 0px;
+    background-color: #0c0c32 ; /* */
+    left: 0;
+        
+    }
+
+    footer img{
+      padding-left: 7px;
+    }
+
+    #RedesSociales img{
+      width: auto;
+      height: 18px;
+    }
+
+    #RedesSociales{
+      margin-top: 30px;
+      margin-left: -30px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      height: 60px;
+
+    }
+
+    #textoFooter{
+      position: absolute;
+      margin-top: 60px;
+      text-align: center;
+      font: 10px FiraSansExtraLight;
+      width: 100%;
+      height: 60px;
+    }
+
+}       /*  ----  TERMINA VERSION SMARTHPHONE ---- */
+
+
+
+    /*  ----  TERMINA VERSION MOVIL ---- */
+
+@media screen and (min-width: 769px) {
+    
+    footer{
+    display: inline-block;
+    color: #fff;
+    height: 0px;
+    width: 100%;
+    margin-top: 0px;
+    padding-bottom: 60px;
+    background-color: #0c0c32;
+    left: 0;
+        
+    }
+
+    footer img{
+      padding-left: 10px;
+    }
+
+    #RedesSociales{
+      margin-top: 15px;
+      margin-left: 5%;
+      display: inline-block;
+      width: 29%;
+      height: 30px;
+    }
+
+    #RedesSociales img{
+      width: auto;
+      height: 18px;
+    }
+
+    #textoFooter{
+      text-align: right;
+      margin-top: 13px;
+      display: inline-block;
+      font: 13px FiraSansExtraLight;
+      width: 65%;
+      height: 30px;
+    }
+
+}
+
+
+
+
+/*  -------------------------- TERMINA FOOTER  ----------  */
+
+/*--------- MENU MUSICA MODA COOLTURA -------------  */ 
+
+
+.menudes {
+position: relative;
+overflow: hidden;
+width: 100%;
+height: 27px;
+line-height: 20px;
+z-index: 0;
+border-radius: 0px;
+background: #b0e7e3; /* ROSA IMAGINANTE */
+}
+.menudes ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.menudes ul li {
+display: inline-block;
+width: 100px;
+box-sizing: border-box;
+font: 14px FiraSansRegular;
+text-transform: uppercase;
+}
+.menudes ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.marca {
+position: absolute;
+bottom: 0px;
+left: -70px; /* Al menos 1/2 del ancho de cada enlace */
+width: 70px; /* 1/2 del ancho de cada enlace */
+height: 6px;
+background: #fff;
+transition: 0.5s ease-in-out; 
+}
+
+#linea{
+  height:10px;
+  background-color: #c73157;
+  margin-top: -3px;
+  z-index: 2;
+}
+
+.menudes ul li:nth-child(1):hover ~ .marca {
+left: -moz-calc(50% -140px); /* 1/4 Ancho del enlace */
+left: calc(50% - 140px);
+}
+.menudes ul li:nth-child(2):hover ~ .marca {
+left: -moz-calc(50% -35px);  /* 1/4 Ancho del enlace + 1 vez ancho enlace */
+left: calc(50% - 35px); 
+}
+.menudes ul li:nth-child(3):hover ~ .marca {
+left: -moz-calc(50% +70px) ; /* 1/4 Ancho del enlace + 2 veces ancho enlace */
+left: calc(50% + 70px) ; 
+}
+.menudes ul li:nth-child(4):hover ~ .marca {
+left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
+}
+
+/*  --------  TERMINA MENU MUSICA MODA COOLTURA  --------- */ 
+
+
+/* --------   EFECTO BLANCO Y NEGRO  -------- */
+
+.grises img{
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+     -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.grises img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+
+}
+
+/* --------   TERMINA EFECTO BLANCO Y NEGRO  -------- */
+
+
+/* -------------------- WIDGETS ----------------  */
+
+
+/* ----------- - NORMAL - -------------- */
+
+@media screen and (min-width: 401px){
+    #Widgets{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-color: #b0e7e3;
+    display: inline-block;
+    margin-bottom: -4px;
+  }
+   #FacebookWidget{
+      width: 330px;
+      height: 330px;
+      margin-top: 50px;
+      margin-left: 22.5px;
+      margin-right: 22.5px;
+      padding-bottom: 40px;
+      display: inline-block;
+    }   
+
+      #WidgetFacebook{
+      width: 330px;
+      height: 330px;
+    }
+
+    #TwitterWidget{
+      width: 330px;
+      height: 330px;
+      margin-top: 50px;
+      margin-left: 22.5px;
+      margin-right: 22.5px;
+      padding-bottom: 40px;
+      display: inline-block;
+    }   
+
+    #InstagramWidget{
+      width: 330px;
+      height: 330px;
+      margin-top: 50px;
+      margin-left: 22.5px;
+      margin-right: 22.5px;
+      padding-bottom: 40px;
+      display: inline-block;
+    }  
+}
+
+/* ----------- - TERMINA NORMAL- -------------- */
+
+/* ----------- - SMARTHPHONE - -------------- */
+
+@media screen and (max-width: 400px){
+    #Widgets{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-color: #b0e7e3;
+    display: inline-block;
+    margin-bottom: -4px;
+  }
+   #FacebookWidget{
+      width: 240px;
+      height: 350px;
+      margin-top: 15px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding-bottom: 0px;
+      display: inline-block;
+    }   
+
+    #WidgetFacebook{
+      width: 240px;
+      height: 350px;
+    }
+
+    #TwitterWidget{
+      width: 240px;
+      height: 330px;
+      margin-top: 15px;
+      margin-left: 22.5px;
+      margin-right: 22.5px;
+      padding-bottom: 10px;
+      display: inline-block;
+    }   
+
+    #InstagramWidget{
+      width: 240px;
+      height: 240px;
+      margin-top: 25px;
+      margin-left: 22.5px;
+      margin-right: 22.5px;
+      padding-bottom: 10px;
+      display: inline-block;
+    }  
+}
+
+
+
+/* ----------- - TERMINA SMARTHPHONE - -------------- */
+
+/* --------------- TERMINA WIDGETS --------------  */
+
+
+
+/* ------------------/// ------ SLIDE WIDGETS ----------- ////// ---------------- */
+
+/* ----------- - NORMAL - -------------- */
+
+@media screen and (min-width: 401px){
+
+
+  .cbp-fwslider {
+    position: relative;
+    margin: 0 0 5px;
+    overflow: hidden;
+    padding: 5px 0 40px;
+  }
+
+  .cbp-fwslider ul {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    list-style-type: none;
+  }
+
+  .cbp-fwslider ul li {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cbp-fwslider ul li > a,
+  .cbp-fwslider ul li > div {
+    display: block;
+    text-align: center;
+    outline: none;
+  }
+
+  .cbp-fwslider ul li > a img {
+    border: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+  }
+
+  .cbp-fwslider nav span {
+    margin-right: 5%;
+    margin-left: 5%;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 100px;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -50px;
+    line-height: 100px;
+    cursor: pointer;
+    font-weight: normal;
+  }
+
+  .cbp-fwslider nav span:hover {
+
+    opacity: 0.5;
+  }
+
+  .cbp-fwslider nav span.cbp-fwnext {
+    right: 0px;
+  }
+
+  .cbp-fwslider nav span.cbp-fwprev {
+    left: 0px;
+  }
+
+  .cbp-fwdots {
+    position: absolute;
+    bottom: 30px;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+  }
+
+  .cbp-fwdots span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    opacity: 0.5;
+    margin: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .cbp-fwdots span:hover {
+    background: #fff;
+    opacity: 1;
+  }
+
+  .cbp-fwdots span.cbp-fwcurrent {
+    background: #fff;
+    opacity: 1;
+
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    -moz-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+}
+
+/* ----------- - TERMINA NORMAL - -------------- */
+
+/* ----------- - SMARTHPHONE - -------------- */
+
+
+@media screen and (max-width: 400px){
+
+
+  .cbp-fwslider {
+    position: relative;
+    margin: 0 0 5px;
+    overflow: hidden;
+    padding: 5px 0 40px;
+  }
+
+  .cbp-fwslider ul {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    list-style-type: none;
+  }
+
+  .cbp-fwslider ul li {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cbp-fwslider ul li > a,
+  .cbp-fwslider ul li > div {
+    display: block;
+    text-align: center;
+    outline: none;
+  }
+
+  .cbp-fwslider ul li > a img {
+    border: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+  }
+
+  .cbp-fwslider nav span {
+    margin-right: 0%;
+    margin-left: 0%;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 100px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -50px;
+    line-height: 60px;
+    cursor: pointer;
+    font-weight: normal;
+  }
+
+  .cbp-fwslider nav span:hover {
+
+    opacity: 0.5;
+  }
+
+  .cbp-fwslider nav span.cbp-fwnext {
+    right: 0px;
+  }
+
+  .cbp-fwslider nav span.cbp-fwprev {
+    left: 0px;
+  }
+
+  .cbp-fwdots {
+    position: absolute;
+    bottom: 30px;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+  }
+
+  .cbp-fwdots span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    opacity: 0.5;
+    margin: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .cbp-fwdots span:hover {
+    background: #fff;
+    opacity: 1;
+  }
+
+  .cbp-fwdots span.cbp-fwcurrent {
+    background: #fff;
+    opacity: 1;
+
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    -moz-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+}
+/* ----------- - TERMINA SMARTHPHONE - -------------- */
+
+/* ------------------/// ------ TERMINA SLIDE WIDGETS ----------- ////// ---------------- */
+
+/* ------------------/// ------ BARRA DE BUSQUEDA ----------- ////// ---------------- */
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon/icomoon.eot');
+  src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.woff') format('woff'),
+    url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ----------- - Movil - -------------- */
+
+@media screen and (max-width: 768px){
+
+      .sb-search {
+        right: 5%;
+        position: absolute;
+        margin-top: 20px;
+        width: 0%;
+        min-width: 35px;
+        height: 35px;
+        overflow: hidden;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        transition: width 0.3s;
+        -webkit-backface-visibility: hidden;
+      }
+
+      .sb-search-input {
+        border-radius: 0px;
+        position: absolute;
+        top: 0;
+        right: 10%;
+        border: none;
+        outline: none;
+        background: #fff;
+        width: 75%;
+        height: 30px;
+        margin: 0;
+        z-index: 10;
+        padding-left: 5%;
+
+        font-family: inherit;
+        font-size: 15px;
+
+        color: #0c0c32 ; /* LETRAS EN INPUT */
+      }
+
+      .sb-search-input::-webkit-input-placeholder {
+        color: #b0e7e3 ;
+      }
+
+      .sb-search-input:-moz-placeholder {
+        color: #b0e7e3 ;
+      }
+
+      .sb-search-input::-moz-placeholder {
+        color: #b0e7e3 ;
+      }
+
+      .sb-search-input:-ms-input-placeholder {
+        color: #b0e7e3 ;
+      }
+
+      .sb-icon-search,
+      .sb-search-submit  {
+        width: 35px;
+        height: 35px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        line-height: 35px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .sb-search-submit {
+        background: #fff; /* IE needs this */
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+          filter: alpha(opacity=0); /* IE 5-7 */
+          opacity: 0;
+        color: transparent;
+        border: none;
+        outline: none;
+        z-index: -1;
+      }
+
+      .sb-icon-search {
+        color: #fff;
+        background: #0c0c32 ;
+        z-index: 90;
+        font-size: 13px;
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .sb-icon-search:before {
+        content: "\e000";
+      }
+
+      /* Open state */
+      .sb-search.sb-search-open,
+      .no-js .sb-search {
+        width: 100%;
+      }
+
+      .sb-search.sb-search-open .sb-icon-search,
+      .no-js .sb-search .sb-icon-search {
+        background: #0c0c32 ;
+        color: #fff;
+        z-index: 11;
+      }
+
+      .sb-search.sb-search-open .sb-search-submit,
+      .no-js .sb-search .sb-search-submit {
+        z-index: 90;
+      }
+
+  }
+
+
+
+/* -------------- TERMINA VERSION MOVIL  ----------------- */
+
+
+
+/* ----------- - TERMINA NORMAL - -------------- */
+
+  @media screen and (min-width: 769px) {
+
+
+  .sb-search {
+    display: inline-block;
+    right: 30%;
+    position: absolute;
+    margin-top: 13px;
+    width: 0%;
+    min-width: 35px;
+    height: 35px;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .sb-search-input {
+      border-radius: 40px;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    border: none;
+    outline: none;
+    background: #fff;
+    width: 55%;
+    height: 30px;
+    margin: 0;
+    z-index: 10;
+    padding-left: 5%;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    color: #0c0c32 ; /* LETRAS EN INPUT */
+  }
+
+  .sb-search-input::-webkit-input-placeholder {
+    color: #b0e7e3 ;
+  }
+
+  .sb-search-input:-moz-placeholder {
+    color: #b0e7e3 ;
+  }
+
+  .sb-search-input::-moz-placeholder {
+    color: #b0e7e3 ;
+  }
+
+  .sb-search-input:-ms-input-placeholder {
+    color: #b0e7e3 ;
+  }
+
+  .sb-icon-search,
+  .sb-search-submit  {
+    width: 35px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .sb-search-submit {
+    background: #fff; /* IE needs this */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+      filter: alpha(opacity=0); /* IE 5-7 */
+      opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: -1;
+  }
+
+  .sb-icon-search {
+    color: #fff;
+    background: #0c0c32 ;
+    z-index: 90;
+    font-size: 15px;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sb-icon-search:before {
+    content: "\e000";
+  }
+
+  /* Open state */
+  .sb-search.sb-search-open,
+  .no-js .sb-search {
+    width: 100%;
+  }
+
+  .sb-search.sb-search-open .sb-icon-search,
+  .no-js .sb-search .sb-icon-search {
+    background: #0c0c32 ;
+    color: #fff;
+    z-index: 11;
+  }
+
+  .sb-search.sb-search-open .sb-search-submit,
+  .no-js .sb-search .sb-search-submit {
+    z-index: 90;
+  }
+
+
+
+/* ----------- - TERMINA SMARTHPHONE - -------------- */}
+
+
+/* ----------- - TERMINA SMARTHPHONE - ------/* ----------- - TERMINA SMARTHPHONE - -------------- */z-------- */
+/* ------------------/// ------ TERMINA BARRA DE BUSQUEDA ----------- ////// ---------------- */
+
