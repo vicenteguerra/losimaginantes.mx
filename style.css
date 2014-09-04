@@ -20,23 +20,13 @@
 
 @font-face {
   font-family: FiraSansRegular;
-  src: url("../fonts/firasans-master/FiraSans-Regular.otf") format("opentype");
+  src: url("<?php echo get_stylesheet_directory_uri(); ?>/fonts/firasans-master/FiraSans-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: FiraSansExtraLight;
   src: url("http://losimaginantes.mx/dev/fonts/firasans-master/FiraSans3105/OTF/FiraSans-ExtraLight.otf") format("opentype");
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src:url('<?php echo get_stylesheet_directory_uri(); ?>/fonts/icomoon/icomoon.eot');
-  src:url('<?php echo get_stylesheet_directory_uri(); ?>/fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('<?php echo get_stylesheet_directory_uri(); ?>/fonts/icomoon/icomoon.woff') format('woff'),
-    url('<?php echo get_stylesheet_directory_uri(); ?>/fonts/icomoon/icomoon.ttf') format('truetype'),
-    url('<?php echo get_stylesheet_directory_uri(); ?>/fonts/icomoon/icomoon.svg#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
 header{
   margin-bottom: -25px;
@@ -216,7 +206,8 @@ header{
     color: #fff;
     width: 100%;
     letter-spacing: 1px;
-    font: 12px FiraSansRegular;
+    font-family: 'Fira Sans', sans-serif,;
+        font-size: 12px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: right;
@@ -341,7 +332,9 @@ header{
 
         _height: 8px; /*IE6 only*/
         white-space: nowrap;
-        font: 10px FiraSansExtraLight;
+        font-family: 'Fira Sans', sans-serif,;
+
+        font-size: 10px;
         text-align: right;
     }
 
@@ -386,7 +379,9 @@ header{
     padding: 14px 22px;
     color: #fff;
     letter-spacing: 1px;
-    font: 14px FiraSansRegular;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    /*font: 14px FiraSansRegular;*/
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -446,7 +441,9 @@ header{
         height: 10px;
         _height: 10px; /*IE6 only*/
         white-space: nowrap;
-        font: 12px FiraSansExtraLight;
+        font-family: 'Fira Sans', sans-serif,;
+        font-weight: 0.5px;
+        font-size: 12px;
         text-align: left;
     }
 
@@ -539,6 +536,8 @@ header{
   display: inline-block;
   margin-top: -4px;
   background-color: #0c0c32;
+  color: #fff;
+
   }
 }
 
@@ -675,7 +674,9 @@ header{
       position: absolute;
       margin-top: 60px;
       text-align: center;
-      font: 10px FiraSansExtraLight;
+      /*font: 10px FiraSansExtraLight; */
+      font-family: 'Fira Sans', sans-serif,;
+        font-size: 10px;
       width: 100%;
       height: 60px;
     }
@@ -721,7 +722,9 @@ header{
       text-align: right;
       margin-top: 13px;
       display: inline-block;
-      font: 13px FiraSansExtraLight;
+      font-family: 'Fira Sans', sans-serif,;
+
+        font-size: 13px;
       width: 65%;
       height: 30px;
     }
@@ -1210,54 +1213,55 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
       }
 
       .sb-icon-search,
-      .sb-search-submit  {
-        width: 35px;
-        height: 35px;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 0;
-        margin: 0;
-        line-height: 35px;
-        text-align: center;
-        cursor: pointer;
-      }
+  .sb-search-submit  {
+    width: 35px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+  }
 
-      .sb-search-submit {
-        background: #fff; /* IE needs this */
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
-          filter: alpha(opacity=0); /* IE 5-7 */
-          opacity: 0;
-        color: transparent;
-        border: none;
-        outline: none;
-        z-index: -1;
-      }
+  .sb-search-submit {
+    background: #fff; /* IE needs this */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+      filter: alpha(opacity=0); /* IE 5-7 */
+      opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: -1;
+  }
 
-      .sb-icon-search {
-        color: #fff;
-        background: #0c0c32 ;
-        z-index: 90;
-        font-size: 13px;
-        font-family: 'icomoon';
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        -webkit-font-smoothing: antialiased;
-      }
+  .sb-icon-search {
 
-      .sb-icon-search:before {
-        content: "\e000";
-      }
+    background-color: #0c0c32;
+    z-index: 50;
+    
 
-      /* Open state */
-      .sb-search.sb-search-open,
-      .no-js .sb-search {
-        width: 100%;
-      }
+  }
+
+  .sb-icon-search img{
+    margin-top: 5px;
+    height: 22px;
+    width: auto;
+  }
+
+  .sb-icon-search:before {
+    
+  }
+
+  /* Open state */
+  .sb-search.sb-search-open,
+  .no-js .sb-search {
+    width: 100%;
+  }
+
 
       .sb-search.sb-search-open .sb-icon-search,
       .no-js .sb-search .sb-icon-search {
@@ -1279,7 +1283,7 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 
 
 
-/* ----------- - TERMINA NORMAL - -------------- */
+/* ----------- -  NORMAL - -------------- */
 
   @media screen and (min-width: 769px) {
 
@@ -1300,7 +1304,7 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
   }
 
   .sb-search-input {
-      border-radius: 40px;
+      border-radius: 0px;
     position: absolute;
     top: 0;
     right: 5%;
@@ -1362,21 +1366,21 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
   }
 
   .sb-icon-search {
-    color: #fff;
-    background: #0c0c32 ;
-    z-index: 90;
-    font-size: 15px;
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased;
+
+    background-color: #0c0c32;
+    z-index: 50;
+    
+
+  }
+
+  .sb-icon-search img{
+    margin-top: 5px;
+    height: 22px;
+    width: auto;
   }
 
   .sb-icon-search:before {
-    content: "\e000";
+    
   }
 
   /* Open state */
@@ -1399,9 +1403,8 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 
 
 
-/* ----------- - TERMINA SMARTHPHONE - -------------- */}
+/* ----------- - TERMINA NORMAL - -------------- */
 
 
-/* ----------- - TERMINA SMARTHPHONE - ------/* ----------- - TERMINA SMARTHPHONE - -------------- */z-------- */
 /* ------------------/// ------ TERMINA BARRA DE BUSQUEDA ----------- ////// ---------------- */
 

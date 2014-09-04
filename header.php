@@ -17,6 +17,8 @@
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+
+
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -25,7 +27,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/demo.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/styleSlide.css" />
 
-
+<link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400italic' rel='stylesheet' type='text/css'>
 
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
