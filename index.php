@@ -20,63 +20,26 @@
 
   <section id="publicaciones"> <!--  ********  INICIA PUBLICACIONES ******** -->
   	<section id="contenedorPublicaciones">
+
+  		<!-- / / / / / / / / / / / / / / /  POST / / / / / / / / / / / // -->
+
+  		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
   		<section id="publicacion" class="grises">
   			<img src="http://lorempixel.com/330/260/">
   			<section class="textoPublicacion">
+  				<section id="tituloPostHome">
+  					<h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>
+  				</section>
+  				
+  			</section> <!-- Fin  section textoPublicacion -->
+	  	</section> <!-- Fin  section publicacion -->
+  	
 
-  			</section>
-	  	</section>
-	  	<section id="publicacion" class="grises">
-  			<img src="http://lorempixel.com/330/260/">
-  			<section class="textoPublicacion">
 
-  			</section>
-	  	</section>
-	  	<section id="publicacion" class="grises">
-  			<img src="http://lorempixel.com/330/260/">
-  			<section class="textoPublicacion">
-
-  			</section>
-	  	</section>
-	  	<section id="publicacion" class="grises">
-  			<img src="http://lorempixel.com/330/260/">
-  			<section class="textoPublicacion">
-
-  			</section>
-	  	</section>
-	  	<section id="publicacion" class="grises">
-  			<img src="http://lorempixel.com/330/260/">
-  			<section class="textoPublicacion">
-
-  			</section>
-	  	</section>
-	  	<section id="publicacion" class="grises">
-  			<img src="http://lorempixel.com/330/260/">
-  			<section class="textoPublicacion">
-
-  			</section>
-	  	</section>
-	  	<section id="publicacion" class="grises">
-  			<img src="http://lorempixel.com/330/260/">
-  			<section class="textoPublicacion">
-
-  			</section>
-	  	</section>
-	  	<section id="publicacion" class="grises">
-  			<img src="http://lorempixel.com/330/260/">
-  			<section class="textoPublicacion">
-
-  			</section>
-	  	</section>
-	  	<section id="publicacion" class="grises">
-  			<img src="http://lorempixel.com/330/260/">
-  			<section class="textoPublicacion">
-
-  			</section>
-	  	</section>
-
-  	</section>
-
+		<?php endwhile; else: ?>Lo sentimos, no se han encontrado entradas.
+		<?php endif; ?>
+	</section><!-- Fin Contenedor -->
   	
   </section> <!--  ********  TERMINA PUBLICACIONES ******** -->
   

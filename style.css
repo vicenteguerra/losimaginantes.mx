@@ -585,17 +585,19 @@ header{
 
 @media only screen and ( min-width: 1126px)  {
   #publicacion{
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 22.5px;
     margin-right: 22.5px;
     height: 260px;
     width: 330px;
     display: inline-block;
-      padding-bottom: 40px;
+    padding-bottom: 80px;
+
   }  
 
   #publicaciones{
-  display: inline-block;
+    position: relative; 
+    display: inline-block;
     height: auto;
     width: 100%;
     background-color: #eee;
@@ -613,8 +615,9 @@ header{
   
   height: 130px;
   width: 100%;
+  position: relative;
   display: inline-block;
-  margin-top: -4px;
+  margin-top: 0px;
   background-color: #0c0c32;
   }
 }
@@ -760,7 +763,9 @@ background: #b0e7e3; /* ROSA IMAGINANTE */
 display: inline-block;
 width: 100px;
 box-sizing: border-box;
-font: 14px FiraSansRegular;
+     font-family: 'Fira Sans', sans-serif,;
+
+        font-size: 14px;
 text-transform: uppercase;
 }
 .menudes ul li a {
@@ -1407,4 +1412,29 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 
 
 /* ------------------/// ------ TERMINA BARRA DE BUSQUEDA ----------- ////// ---------------- */
+
+
+
+#tituloPostHome{
+  width: 90%;
+  height: 50%;
+  margin-left: 5%;
+
+display: inline-block;
+}
+
+
+
+
+.textoPublicacion h2 a{
+  color: #fff;
+  display: inline-block;
+  position: relative;
+ 
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration:none;
+  font-size: 13px;
+  text-align: left;
+  margin: 0 0;
+}
 
