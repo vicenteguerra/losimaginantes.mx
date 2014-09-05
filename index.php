@@ -53,6 +53,8 @@
   			<section class="textoPublicacion">
   				<section id="tituloPostHome">
   					<h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>
+  					<p id="autor"> Autor: <?php the_author() ?> </p>
+
   				</section>
   				
   			</section> <!-- Fin  section textoPublicacion -->

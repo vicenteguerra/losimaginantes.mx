@@ -1424,8 +1424,6 @@ display: inline-block;
 }
 
 
-
-
 .textoPublicacion h2 a{
   color: #fff;
   display: inline-block;
@@ -1436,5 +1434,11 @@ display: inline-block;
   font-size: 13px;
   text-align: left;
   margin: 0 0;
+}
+
+#autor{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 11px;
+  color: #fff;
 }
 
