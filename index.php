@@ -1,10 +1,33 @@
 <?php get_header(); ?>
 
 
- <section id="slide">
+ <div class="ia-container">
+				
+							
+										<figure>
+											<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/6.jpg" alt="image06" />
+											<input type="radio" name="radio-set" />
+											<figcaption><span>Lovely Midnight</span></figcaption>
+								
+											<figure>
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/7.jpg" alt="image07" />
+												<input type="radio" name="radio-set" />
+												<figcaption><span>Illuminated Darkness</span></figcaption>											
 
-  </section>
-
+												<figure>
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/8.jpg" alt="image08" />
+													<input id="ia-selector-last" type="radio" name="radio-set" />
+													<figcaption><span>Happy Child</span></figcaption>
+												</figure>
+												
+											</figure>
+								
+										</figure>	
+											
+						
+					
+			
+        </div>
 
   <section class="menudes">
   <ul>
