@@ -6,7 +6,7 @@
 							
 										<figure>
 											<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/6.jpg" alt="image06" />
-											<input type="radio" name="radio-set" />
+											<input type="radio" name="radio-set" checked="checked"/>
 											<figcaption><span>Lovely Midnight</span></figcaption>
 								
 											<figure>
@@ -68,7 +68,10 @@
   	
   </section> <!--  ********  TERMINA PUBLICACIONES ******** -->
   
-  		  <section id="Widgets"><!--  ********  INICIA WIDGETS ******** -->
+  		 
+
+
+  		 <section id="Widgets"><!--  ********  INICIA WIDGETS ******** -->
   
 
   		  	<div id="cbp-fwslider" class="cbp-fwslider">
@@ -102,7 +105,7 @@
 		<script>
 			$( function() {
 				/*
-				- how to call the plugin:
+				- how to call the plugin:s
 				$( selector ).cbpFWSlider( [options] );
 				- options:
 				{
@@ -129,9 +132,6 @@
     
 
   </section> <!--  ********  TERMINA WIDGETS ******** -->
-
-
-
 
 
 
