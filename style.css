@@ -18,14 +18,6 @@
 /* FIN RESET */
 
 
-@font-face {
-  font-family: FiraSansRegular;
-  src: url("<?php echo get_stylesheet_directory_uri(); ?>/fonts/firasans-master/FiraSans-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: FiraSansExtraLight;
-  src: url("http://losimaginantes.mx/dev/fonts/firasans-master/FiraSans3105/OTF/FiraSans-ExtraLight.otf") format("opentype");
-}
 
 
 header{
