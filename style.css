@@ -846,10 +846,6 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
       display: inline-block;
     }   
 
-      #WidgetFacebook{
-      width: 330px;
-      height: 330px;
-    }
 
     #TwitterWidget{
       width: 330px;
@@ -895,9 +891,6 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
       display: inline-block;
     }   
 
-    #WidgetFacebook{
-      width: 240px;
-      height: 350px;
     }
 
     #TwitterWidget{
