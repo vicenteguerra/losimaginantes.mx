@@ -1,33 +1,33 @@
 <?php get_header(); ?>
 
+<section id="slide">
 
- <div class="ia-container">
+    <div class="ia-container">
 				
 							
 										<figure>
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/6.jpg" alt="image06" />
-											<input type="radio" name="radio-set" checked="checked"/>
+											<img src="http://lorempixel.com/680/480/" alt="image06" />
+											<input type="radio" name="radio-set" />
 											<figcaption><span>Lovely Midnight</span></figcaption>
 								
 											<figure>
-												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/7.jpg" alt="image07" />
-												<input type="radio" name="radio-set" />
+												<img src="http://lorempixel.com/680/480/" alt="image07" />
+												<input type="radio" name="radio-set" checked="checked"/>
 												<figcaption><span>Illuminated Darkness</span></figcaption>											
 
 												<figure>
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/8.jpg" alt="image08" />
+													<img src="http://lorempixel.com/680/480/" alt="image08" />
 													<input id="ia-selector-last" type="radio" name="radio-set" />
 													<figcaption><span>Happy Child</span></figcaption>
 												</figure>
 												
 											</figure>
 								
-										</figure>	
-											
-						
-					
-			
-        </div>
+										</figure>								
+        </div>    
+    
+</section>
+ 
 
   <section class="menudes">
   <ul>
