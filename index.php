@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); $postcount = 1;?>
 
 <section id="slide">
 
@@ -40,7 +40,7 @@
     </section>
  </ul>
 </section>
-
+<section id="container">
   <section id="publicaciones"> <!--  ********  INICIA PUBLICACIONES ******** -->
   	<section id="contenedorPublicaciones">
 
@@ -48,7 +48,7 @@
 
   		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  		<section id="publicacion" class="grises">
+  		<section id="publicacion" class="grises" id="post-<?php echo $postcount ?>">
   			<img src="http://lorempixel.com/330/260/">
   			<section class="textoPublicacion">
   				<section id="tituloPostHome">
@@ -58,16 +58,15 @@
   				</section>
   				
   			</section> <!-- Fin  section textoPublicacion -->
-	  	</section> <!-- Fin  section publicacion -->
-  	
+	  	</section> <!-- Fin  section publicacion -->  	
 
 
-		<?php endwhile; else: ?>Lo sentimos, no se han encontrado entradas.
+		<?php $postcount++; endwhile; else: ?>Lo sentimos, no se han encontrado entradas.
 		<?php endif; ?>
 	</section><!-- Fin Contenedor -->
   	
   </section> <!--  ********  TERMINA PUBLICACIONES ******** -->
-  
+</section>  
   		 
 
 <section id="Widgets"><!--  ********  INICIA WIDGETS ******** -->
