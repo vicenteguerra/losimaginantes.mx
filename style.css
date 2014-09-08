@@ -484,7 +484,7 @@ header{
   position: fixed; top: 0px; }
 
 
-/*                           -----------  Publicaciones index  ------------ */ 
+/*  -----------  Publicaciones index  ------------ */ 
 
 /*  ---- SMARTHPHONE ----*/
 
@@ -505,7 +505,7 @@ header{
       height: 220px;
       width: 280px;
     }
-
+    
     #publicaciones{
   display: inline-block;
     height: auto;
@@ -822,6 +822,8 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 /* --------   TERMINA EFECTO BLANCO Y NEGRO  -------- */
 
 
+
+
 /* -------------------- WIDGETS ----------------  */
 
 
@@ -834,8 +836,9 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
     text-align: center;
     background-color: #b0e7e3;
     display: inline-block;
-    margin-bottom: -4px;
+margin: 50px -4px;
   }
+
    #FacebookWidget{
       width: 330px;
       height: 330px;
@@ -843,9 +846,15 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
       margin-left: 22.5px;
       margin-right: 22.5px;
       padding-bottom: 40px;
+      background-color: #fff
       display: inline-block;
     }   
 
+      #WidgetFacebook{
+      width: 330px;
+      height: 330px;
+   background-color: #fff;
+    }
 
     #TwitterWidget{
       width: 330px;
@@ -891,6 +900,9 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
       display: inline-block;
     }   
 
+    #WidgetFacebook{
+      width: 240px;
+      height: 350px;
     }
 
     #TwitterWidget{

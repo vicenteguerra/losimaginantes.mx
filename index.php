@@ -70,13 +70,15 @@
   		 
 
 <section id="Widgets"><!--  ********  INICIA WIDGETS ******** -->
-  
+<label>a</label>  
 <div id="cbp-fwslider" class="cbp-fwslider">
 <ul>
 <li>
+
 <section id="FacebookWidget">
-<iframe id="FacebookWidget" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FImaginantesMX&amp;width=330&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; " allowTransparency="true"></iframe>
-						 </section>
+<iframe id="WidgetFacebook" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FImaginantesMX&amp;width=330&amp;height=330&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:330px; height:330px;" allowTransparency="true"></iframe>
+</section>
+						
 					</li>
 					<li>
 
