@@ -70,35 +70,43 @@
   		 
 
 <section id="Widgets"><!--  ********  INICIA WIDGETS ******** -->
-<label>a</label>  
-<div id="cbp-fwslider" class="cbp-fwslider">
-<ul>
-<li>
+    
+    <section id="containerWidgets">
+    
+        <div id="cbp-fwslider" class="cbp-fwslider">
+            <ul>
 
-<section id="FacebookWidget">
-<iframe id="WidgetFacebook" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FImaginantesMX&amp;width=330&amp;height=330&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:330px; height:330px;" allowTransparency="true"></iframe>
-</section>
-						
-					</li>
-					<li>
+                <li>
 
-<section id="TwitterWidget">
-					      <a class="twitter-timeline" href="https://twitter.com/losimaginantes" data-widget-id="423161448521408512">Tweets por @losimaginantes</a>
-					      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      					</section>
+            <section id="TwitterWidget">
+                                      <iframe id="WidgetFacebook" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FImaginantesMX&amp;width=330&amp;height=330&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:330px; height:330px;" allowTransparency="true"></iframe>
+                                    </section>
 
-					</li>
-					<li>
+                                </li>
 
-<section id="InstagramWidget">
-					      		<script src="http://instansive.com/widget/js/instansive.js"></script><iframe src="http://instansive.com/widgets/ic73a113cf256862bf940a9a5b57c3a2.html" scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-					    </section>
+                                <li>
 
-					</li>
-					
-				</ul>
-			</div>
-		</div>
+            <section id="TwitterWidget">
+                                      <a class="twitter-timeline" href="https://twitter.com/losimaginantes" data-widget-id="423161448521408512">Tweets por @losimaginantes</a>
+                                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                    </section>
+
+                                </li>
+                                <li>
+
+            <section id="InstagramWidget">
+                                            <script src="http://instansive.com/widget/js/instansive.js"></script><iframe src="http://instansive.com/widgets/ic73a113cf256862bf940a9a5b57c3a2.html" scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                                    </section>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+    
+    </section>
+
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.cbpFWSlider.min.js"></script>
 		<script>

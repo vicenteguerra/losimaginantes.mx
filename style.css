@@ -575,7 +575,7 @@ header{
   }
 }
 
-@media only screen and ( min-width: 1126px)  {
+@media only screen and ( min-width: 1180px)  {
   #publicacion{
     margin-top: 100px;
     margin-left: 22.5px;
@@ -836,10 +836,11 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
     text-align: center;
     background-color: #b0e7e3;
     display: inline-block;
-margin: 50px -4px;
+
   }
 
    #FacebookWidget{
+       
       width: 330px;
       height: 330px;
       margin-top: 50px;
@@ -847,10 +848,10 @@ margin: 50px -4px;
       margin-right: 22.5px;
       padding-bottom: 40px;
       background-color: #fff
-      display: inline-block;
     }   
 
       #WidgetFacebook{
+          text-align: center;
       width: 330px;
       height: 330px;
    background-color: #fff;
@@ -891,18 +892,19 @@ margin: 50px -4px;
     margin-bottom: -4px;
   }
    #FacebookWidget{
-      width: 240px;
-      height: 350px;
+       width: 240px;
+      height: 330px;
       margin-top: 15px;
-      margin-left: 5px;
-      margin-right: 5px;
-      padding-bottom: 0px;
+      margin-left: 22.5px;
+      margin-right: 22.5px;
+      padding-bottom: 10px;
       display: inline-block;
     }   
 
     #WidgetFacebook{
       width: 240px;
       height: 350px;
+        display: inline-block;
     }
 
     #TwitterWidget{
@@ -1450,4 +1452,8 @@ h2 {
     text-align: center;
     background-color: #eee;
     width: 100%;
+}
+
+#containerWidgets {
+    display: inline-block;
 }
