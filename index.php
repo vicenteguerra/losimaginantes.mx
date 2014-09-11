@@ -49,11 +49,13 @@
   		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   		<section id="publicacion" class="grises" id="post-<?php echo $postcount ?>">
-  			<img src="http://lorempixel.com/330/260/">
+  			<img src="<?php echo get_first_image() ?>">
   			<section class="textoPublicacion">
   				<section id="tituloPostHome">
-  					<h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>
-  					<p id="autor"> Autor: <?php the_author() ?> </p>
+  					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>
+                    <a id="resumen"><?php the_excerpt(); ?></a>
+  					 <!-- <p id="autor"> Autor:  </p> -->
+                    
 
   				</section>
   				
