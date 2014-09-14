@@ -1,5 +1,22 @@
 <?php get_header();?>
 <?php get_sidebar(); ?>
+<script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '224245647630343',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/es_LA/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
 <section id="contenedorPublicacion">
     <section id="postBarra">
         <br>
@@ -20,7 +37,7 @@
             </section>
             <section id="postComments">
                 <h3 class="postRev">REVELATE, ¿QUÉ PIENSAS?</h3>
-                <?php echo do_shortcode('[fbcomments url="https://www.facebook.com/ImaginantesMX?fref=ts" width="650px" count="off" num="3" countmsg="wonderful comments!"]'); ?>
+                <div class="fb-comments" data-href="http://example.com/comments" data-width="650" data-numposts="5" data-colorscheme="light"></div>
             </section>
             <?php endwhile; else: ?>
             <h2>No encontrado</h2>

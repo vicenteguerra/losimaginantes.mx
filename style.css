@@ -1485,7 +1485,7 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 #postPublicacion {
     width: 89%;
     margin-left: 5%;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     background-color: white;
     -webkit-box-shadow: 0px 0px 1px 0px #e0e8e7;
     -moz-box-shadow:    0px 0px 1px 0px #e0e8e7;
@@ -1515,7 +1515,7 @@ color: #414141;
 #postBarra {
     background-color: #a42f50;
     width: 90.6%;
-    margin-left: 2.92%;
+    margin-left: 3%;
     padding: 3px;
 }
 
@@ -1541,7 +1541,7 @@ color: #414141;
     border-top: 7px solid #a42f50;
     background-color: #f4f4f4;
     width: 700px;
-    margin-left: -2%;
+    margin-left: -1.6%;
     text-align: center;
 }
 .postRev{
