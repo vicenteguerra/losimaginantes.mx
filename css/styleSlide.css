@@ -66,11 +66,11 @@
 	height: 100%;
 	background: rgba(87, 73, 81, 0.1);
 	position: absolute;
-	top: 0px;
+    top: 40%;
 	-webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
+    -ms-transition: all 0.2s l5near;
     transition: all 0.2s linear;
 }
 
@@ -135,6 +135,11 @@
     .ia-container { 
 		width: 580px; 
 	}
+    
+    .ia-container figcaption {
+    top:30%;
+    }
+    
 	
 	.ia-container figure { 
 		left: 128px; 

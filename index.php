@@ -49,11 +49,33 @@
   		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   		<section id="publicacion" class="grises" id="post-<?php echo $postcount ?>">
-  			<img src="<?php echo get_first_image() ?>">
+            
+            <!-- Verifica imagen horizontal o vertical -->
+            
+             <? 
+     
+                        list($width, $height, $type, $attr) = getimagesize(get_first_image() ); 
+                        if($width > $height)
+                        {
+                            $idImagenPost="imgHorizontal";
+                        }
+                        else
+                        {
+                            $idImagenPost="imgVertical";  
+                        }
+            ?>
+            
+            <!-- Termina verificacion tama;o de imagen -->
+            
+            <section id="contenedorImagenPost" >
+                <img  id="<?php echo $idImagenPost; ?>" src="<?php echo get_first_image() ?>">
+            </section>
+            
   			<section class="textoPublicacion">
   				<section id="tituloPostHome">
-  					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>
-                    <a id="resumen"><?php the_excerpt(); ?></a>
+  					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>  
+                  
+                    <a id="resumen"><?php echo $idImagenPost;  the_excerpt(); ?></a>
   					 <!-- <p id="autor"> Autor:  </p> -->
                     
 
@@ -67,6 +89,20 @@
 		<?php endif; ?>
 	</section><!-- Fin Contenedor -->
   	
+      
+      <?php 
+    $the_last_page = $wp_query->max_num_pages; 
+    $loaded_page = intval($paged); 
+?> 
+<?php if ( $the_last_page == $loaded_page) { ?> 
+    <a href="<?php previous_posts(); ?>#anchor" class="previous" style="margin-left:40px;">Posts Recientes</a> 
+<?php } elseif ($loaded_page == 0) { ?> 
+    <a href="<?php next_posts(); ?>#anchor" class="next">Posts Anteriores</a> 
+<?php } else { ?> 
+    <a href="<?php previous_posts(); ?>#anchor" class="previous" style="margin-left:40px;">Posts Recientes</a>  <a href="<?php next_posts(); ?>#anchor" class="next">Posts Anteriores</a> 
+<?php } ?>
+      
+      
   </section> <!--  ********  TERMINA PUBLICACIONES ******** -->
 </section>  
   		 

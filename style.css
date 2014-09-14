@@ -501,10 +501,24 @@ header{
       display: inline-block;
     }
 
-    #publicacion img{
+    #contenedorImagenPost{
+    background-color: #ddd;
+    
       height: 198px;
       width: 252px;
     }
+    
+    #imgVertical{
+        top:auto;
+      height: auto;
+      width: 252px;
+    }
+    
+    #imgHorizontal{
+       height: 198px;
+       width: auto; 
+    }
+    
     
     #publicaciones{
   display: inline-block;
@@ -556,9 +570,22 @@ header{
     width: 100%;
     background-color: #eee;
 }
-    #publicacion img{
+    
+    #contenedorImagenPost{
+     vertical-align: middle;
+    background-color: #ddd;
       height: 234px;
       width: 297px;
+    }
+    
+    #imgVertical{
+      height: auto;
+      width: 297px;
+    }
+    
+     #imgHorizontal{
+      height: 234px;
+      width: auto;
     }
 
   #contenedorPublicaciones{
@@ -590,10 +617,29 @@ header{
     padding-bottom: 80px;
 
   }  
-    #publicacion img{
+    
+    #contenedorImagenPost{
+        
+        overflow: hidden;
       height: 234px;
       width: 297px;
+        background-color: #ddd;
+        display:block;
+        
     }
+    
+   #imgVertical{
+       position: relative;
+      height: auto;
+      width: 297px;
+    }
+    
+     #imgHorizontal{
+     margin-left: width;
+      height: 100%;
+      width: auto;;
+    }
+
 
   #publicaciones{
     position: relative; 
