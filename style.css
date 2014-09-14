@@ -909,14 +909,14 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 
       #WidgetFacebook{
           text-align: center;
-      width: 330px;
-      height: 330px;
+      width: 297px;
+      height: 297px;
    background-color: #fff;
     }
 
     #TwitterWidget{
-      width: 330px;
-      height: 330px;
+      width: 297px;
+      height: 297px;
       margin-top: 50px;
       margin-left: 22.5px;
       margin-right: 22.5px;
@@ -925,8 +925,8 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
     }   
 
     #InstagramWidget{
-      width: 330px;
-      height: 330px;
+      width: 297px;
+      height: 297px;
       margin-top: 50px;
       margin-left: 22.5px;
       margin-right: 22.5px;
@@ -950,7 +950,7 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
   }
    #FacebookWidget{
        width: 240px;
-      height: 330px;
+      height: 297px;
       margin-top: 15px;
       margin-left: 22.5px;
       margin-right: 22.5px;
@@ -960,13 +960,13 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 
     #WidgetFacebook{
       width: 240px;
-      height: 350px;
+      height: 297px;
         display: inline-block;
     }
 
     #TwitterWidget{
       width: 240px;
-      height: 330px;
+      height: 297px;
       margin-top: 15px;
       margin-left: 22.5px;
       margin-right: 22.5px;
