@@ -1,47 +1,15 @@
 <?php get_header(); $postcount = 1;?>
 
 <section id="slide">
-
-    <div class="ia-container">
-				
-        <?php query_posts("category_name=ceremonia"); ?>
-        
-							
-										<figure>
-											<img src="http://lorempixel.com/680/480/" alt="image06" />
-											<input type="radio" name="radio-set" />
-											<figcaption><span>Lovely Midnight</span></figcaption>
-								
-											<figure>
-												<img src="http://lorempixel.com/680/480/" alt="image07" />
-												<input type="radio" name="radio-set" checked="checked"/>
-												<figcaption><span>Illuminated Darkness</span></figcaption>											
-
-												<figure>
-													<img src="http://lorempixel.com/680/480/" alt="image08" />
-													<input id="ia-selector-last" type="radio" name="radio-set" />
-													<figcaption><span>Happy Child</span></figcaption>
-												</figure>
-												
-											</figure>
-								
-										</figure>								
-        </div>    
+    <section id="TituloBusqueda">
+        <a> Resultados de Busqueda </a>
+    </section>
+   
     
 </section>
  
 
-  <section class="menudes">
-  <ul>
-    <li><a href="">Musica</a></li>
-    <li><a href="">Moda</a></li>
-    <li><a href="">Cooltura</a></li>
-   <div class="marca"></div>
-    <section id="linea">
-  
-    </section>
- </ul>
-</section>
+
 <section id="container">
   <section id="publicaciones"> <!--  ********  INICIA PUBLICACIONES ******** -->
   	<section id="contenedorPublicaciones">
@@ -49,7 +17,7 @@
   		<!-- / / / / / / / / / / / / / / /  POST / / / / / / / / / / / // -->
         
         
-         <?php query_posts("category_name=ceremonia,viernes-de-clasicos"); ?>
+         
         
   		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -120,8 +88,8 @@
 
                 <li>
 
-            <section id="FacebookWidget">
-                                      <iframe id="WidgetFacebook" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FImaginantesMX&amp;width=330&amp;height=330&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:297px; height:297px;" allowTransparency="true"></iframe>
+            <section id="TwitterWidget">
+                                      <iframe id="WidgetFacebook" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FImaginantesMX&amp;width=330&amp;height=330&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:330px; height:330px;" allowTransparency="true"></iframe>
                                     </section>
 
                                 </li>
@@ -130,7 +98,7 @@
 
             <section id="TwitterWidget">
                                       <a class="twitter-timeline" href="https://twitter.com/losimaginantes" data-widget-id="423161448521408512">Tweets por @losimaginantes</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                                     </section>
 
                                 </li>
@@ -174,7 +142,7 @@
 
 
 
-      
+    
       
 
     

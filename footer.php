@@ -41,11 +41,20 @@
       </section>
 
       
+      
+      
+      
+
+      
+      
+      
       <section id="sb-search" class="sb-search">
-            <form>
-              <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
-              <input class="sb-search-submit" type="submit" value="">
-              <span class="sb-icon-search"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/footer-iconos/footer-icono-busqueda.png"></span>
+            <form action="<?php bloginfo('siteurl'); ?>" id="searchform" method="get">
+                
+              <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="s" id="s" required>
+              
+              <input class="sb-icon-search" type="image" alt="Search" src="<?php echo get_stylesheet_directory_uri(); ?>/images/footer-iconos/footer-icono-busqueda.png"/>
+            
             </form>
         </section> 
       
