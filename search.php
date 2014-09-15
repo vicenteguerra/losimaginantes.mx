@@ -19,33 +19,41 @@
         
          
         
-  		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   		<section id="publicacion" class="grises" id="post-<?php echo $postcount ?>">
             
             <!-- Verifica imagen horizontal o vertical -->
             
              <? 
-                        list($width, $height, $type, $attr) = getimagesize(get_first_image() ); 
-                        if($width > $height)
-                        {
-                            $idImagenPost="imgHorizontal";
+                        
+                        if(!getimagesize(get_first_image() )){  
+                            $idImagenPost="vacio";
                         }
-                        else
-                        {
-                            $idImagenPost="imgVertical";  
+                        else{
+                            list($width, $height, $type, $attr) = getimagesize(get_first_image() ); 
+                            
+                           if($width > $height)
+                            {
+                                $idImagenPost="imgHorizontal";
+                            }
+                            else
+                            {
+                                $idImagenPost="imgVertical";  
+                            } 
                         }
             ?>
             
             <!-- Termina verificacion tama;o de imagen -->
             
             <section id="contenedorImagenPost" >
-                <img  id="<?php echo $idImagenPost; ?>" src="<?php echo get_first_image() ?>">
+                <img  id="<?php echo $idImagenPost; ?>" src="<?php if($idImagenPost!="vacio"){ echo get_first_image(); }else{ echo get_stylesheet_directory_uri(). "/images/globo.png";} ?>">
             </section>
             
   			<section class="textoPublicacion">
   				<section id="tituloPostHome">
   					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>  
+    
                   
                     <a id="resumen"><?php echo  the_excerpt(); ?></a>
   					 <!-- <p id="autor"> Autor:  </p> -->

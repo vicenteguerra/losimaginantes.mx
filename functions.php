@@ -10,7 +10,7 @@ function get_first_image() {
     $first_img = $matches [1] [0];
     if(empty($first_img)) //Definimos una imagen por defecto en caso que no la tenga
     { 
-        $first_img = "http://lorempixel.com/330/260/"; 
+        $first_img = get_stylesheet_directory_uri(). "/images/globo.png"; 
     }
     return $first_img;
 }

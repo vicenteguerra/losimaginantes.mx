@@ -304,10 +304,8 @@ header{
     }
 
     #lmenu ul li a{
+        
 
-      padding-bottom: 25px;
-      margin-top: -30px;
-      margin-bottom: 10px;
     }
 
     #lmenu ul li a:last-child {   
@@ -320,9 +318,10 @@ header{
         width: 80%;
         background-color: #0b0b3b;
         opacity: 1;
-        height: 8px;
-
-        _height: 8px; /*IE6 only*/
+        height: 0px;
+        padding-bottom: 25px;
+        
+        _height: 0px; /*IE6 only*/
         white-space: nowrap;
         font-family: 'Fira Sans', sans-serif,;
 
@@ -427,11 +426,14 @@ header{
       z-index: 3;
         margin-left: -35px;
         margin-top: 0px;
+        padding-top: 10px;
+        padding-bottom: 25px;
         width: 140px;
+        margin-bottom: 0px;
         background-color: #0b0b3b;
         opacity: 1;
-        height: 10px;
-        _height: 10px; /*IE6 only*/
+        height: 0px;
+        _height: 2px; /*IE6 only*/
         white-space: nowrap;
         font-family: 'Fira Sans', sans-serif,;
         font-weight: 0.5px;
@@ -519,6 +521,13 @@ header{
        width: auto; 
     }
     
+    #vacio{
+    
+      height: 198px;
+      width: auto;
+    }
+    
+    
     
     #publicaciones{
   display: inline-block;
@@ -587,6 +596,12 @@ header{
       height: 234px;
       width: auto;
     }
+    
+     #vacio{
+      height: 234px;
+      width: auto;
+    }
+    
 
   #contenedorPublicaciones{
     margin-top: -60px;
@@ -639,6 +654,12 @@ header{
       height: 100%;
       width: auto;;
     }
+    
+     #vacio{
+      height: 234px;
+      width: auto;
+    }
+    
 
 
   #publicaciones{
@@ -711,6 +732,8 @@ header{
       width: auto;
       height: 18px;
     }
+    
+    
 
     #RedesSociales{
       margin-top: 30px;
@@ -1612,3 +1635,5 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     width: 100%;
     text-align: center;
 }
+
+

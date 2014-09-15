@@ -12,6 +12,8 @@
 	top: 0;
 	left: 160px; /* width of visible piece */
 	width: 680px;
+   
+
     box-shadow: 0 0 0 1px rgba(255,255,255,0.6);
 	-webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -26,8 +28,16 @@
 }
 
 .ia-container img {
-	display: block;
-	width: 100%;
+    position: relative;
+	width: 680px;
+    height: auto;
+}
+
+.ia-container section {
+    overflow: hidden;
+    display: block;
+    width: 680px;
+    height: 480px;
 }
 
 .ia-container input {

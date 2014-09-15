@@ -4,23 +4,37 @@
 
     <div class="ia-container">
 				
-        <?php query_posts("category_name=ceremonia"); ?>
+        <?php query_posts("category_name=noticias"); ?>
         
 							
 										<figure>
-											<img src="http://lorempixel.com/680/480/" alt="image06" />
-											<input type="radio" name="radio-set" />
-											<figcaption><span>Lovely Midnight</span></figcaption>
-								
+                                            <?php the_post(); ?>
+                                            <section id="contImgSlide">
+                                                <img src="<?php echo get_first_image() ?>" alt="image06" />
+                                                
+                                            </section>
+                                            <input type="radio" name="radio-set" />
+                                            <figcaption><span><?php the_title(); ?></span></figcaption>
+											
 											<figure>
-												<img src="http://lorempixel.com/680/480/" alt="image07" />
+                                                <?php the_post(); ?>
+                                                <section id="contImgSlide">
+                                                    <img src="<?php echo get_first_image() ?>" alt="image07" />
+                                                </section>
+												
 												<input type="radio" name="radio-set" checked="checked"/>
-												<figcaption><span>Illuminated Darkness</span></figcaption>											
+												<figcaption><span><?php the_title(); ?></span></figcaption>											
 
 												<figure>
-													<img src="http://lorempixel.com/680/480/" alt="image08" />
-													<input id="ia-selector-last" type="radio" name="radio-set" />
-													<figcaption><span>Happy Child</span></figcaption>
+                                                    <?php the_post(); ?>
+                                                    
+                                                    <section id="contImgSlide">
+                                                        <img src="<?php echo get_first_image() ?>" alt="image08" />
+                                                        
+                                                    </section>
+                                                    <input id="ia-selector-last" type="radio" name="radio-set" />
+                                                        <figcaption><span><?php the_title(); ?></span></figcaption>
+													
 												</figure>
 												
 											</figure>
@@ -34,7 +48,7 @@
   <section class="menudes">
   <ul>
     <li><a href="">Musica</a></li>
-    <li><a href="">Moda</a></li>
+    <li ><a href="">Moda</a></li>
     <li><a href="">Cooltura</a></li>
    <div class="marca"></div>
     <section id="linea">
@@ -49,7 +63,7 @@
   		<!-- / / / / / / / / / / / / / / /  POST / / / / / / / / / / / // -->
         
         
-         <?php query_posts("category_name=ceremonia,viernes-de-clasicos"); ?>
+         <?php query_posts("category_name=ceremonia,coberturas,conciertos,de-paseo-con,editorial,entrevistas,exclusivas,festival-marvin-2,galeria,la-nota-ilustrada,musica-a-traves-de-imagenes,miercoles-random,muati,nuevos-pero-chidos,papeles-voladores,peliculas,playlist-2,resena-album,resenas,uncategorized,viernes-de-clasicos,vive-latino"); ?>
         
   		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -58,21 +72,28 @@
             <!-- Verifica imagen horizontal o vertical -->
             
              <? 
-                        list($width, $height, $type, $attr) = getimagesize(get_first_image() ); 
-                        if($width > $height)
-                        {
-                            $idImagenPost="imgHorizontal";
+                        
+                        if(!getimagesize(get_first_image() )){  
+                            $idImagenPost="vacio";
                         }
-                        else
-                        {
-                            $idImagenPost="imgVertical";  
+                        else{
+                            list($width, $height, $type, $attr) = getimagesize(get_first_image() ); 
+                            
+                           if($width > $height)
+                            {
+                                $idImagenPost="imgHorizontal";
+                            }
+                            else
+                            {
+                                $idImagenPost="imgVertical";  
+                            } 
                         }
             ?>
             
             <!-- Termina verificacion tama;o de imagen -->
             
             <section id="contenedorImagenPost" >
-                <img  id="<?php echo $idImagenPost; ?>" src="<?php echo get_first_image() ?>">
+                <img  id="<?php echo $idImagenPost; ?>" src="<?php if($idImagenPost!="vacio"){ echo get_first_image(); }else{ echo get_stylesheet_directory_uri(). "/images/globo.png";} ?>">
             </section>
             
   			<section class="textoPublicacion">
@@ -94,17 +115,7 @@
 	</section><!-- Fin Contenedor -->
   	
       
-      <?php 
-    $the_last_page = $wp_query->max_num_pages; 
-    $loaded_page = intval($paged); 
-?> 
-<?php if ( $the_last_page == $loaded_page) { ?> 
-    <a href="<?php previous_posts(); ?>#anchor" class="previous" style="margin-left:40px;">Posts Recientes</a> 
-<?php } elseif ($loaded_page == 0) { ?> 
-    <a href="<?php next_posts(); ?>#anchor" class="next">Posts Anteriores</a> 
-<?php } else { ?> 
-    <a href="<?php previous_posts(); ?>#anchor" class="previous" style="margin-left:40px;">Posts Recientes</a>  <a href="<?php next_posts(); ?>#anchor" class="next">Posts Anteriores</a> 
-<?php } ?>
+     
       
       
   </section> <!--  ********  TERMINA PUBLICACIONES ******** -->
