@@ -456,7 +456,7 @@ header{
 
 #slide{
   width: 100%;
-  background-color: #B0E7E3;
+  background-color: #dff0ef;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -726,7 +726,7 @@ header{
       position: absolute;
       margin-top: 60px;
       text-align: center;
-      /*font: 10px FiraSansExtraLight; */
+      /*font: 9px FiraSansExtraLight; */
       font-family: 'Fira Sans', sans-serif,;
         font-size: 10px;
       width: 100%;
@@ -799,7 +799,7 @@ height: 27px;
 line-height: 20px;
 z-index: 0;
 border-radius: 0px;
-background: #b0e7e3; /* ROSA IMAGINANTE */
+background: #dff0ef; /* ROSA IMAGINANTE */
 }
 .menudes ul {
   list-style: none;
@@ -898,8 +898,8 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 
    #FacebookWidget{
        
-      width: 330px;
-      height: 330px;
+      width: 297px;
+      height: 297px;
       margin-top: 50px;
       margin-left: 22.5px;
       margin-right: 22.5px;
@@ -950,7 +950,7 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
   }
    #FacebookWidget{
        width: 240px;
-      height: 297px;
+      height: 240px;
       margin-top: 15px;
       margin-left: 22.5px;
       margin-right: 22.5px;
@@ -960,13 +960,13 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 
     #WidgetFacebook{
       width: 240px;
-      height: 297px;
+      height: 240px;
         display: inline-block;
     }
 
     #TwitterWidget{
       width: 240px;
-      height: 297px;
+      height: 240px;
       margin-top: 15px;
       margin-left: 22.5px;
       margin-right: 22.5px;
