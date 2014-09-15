@@ -4,6 +4,8 @@
 
     <div class="ia-container">
 				
+        <?php query_posts("category_name=ceremonia"); ?>
+        
 							
 										<figure>
 											<img src="http://lorempixel.com/680/480/" alt="image06" />
@@ -45,7 +47,10 @@
   	<section id="contenedorPublicaciones">
 
   		<!-- / / / / / / / / / / / / / / /  POST / / / / / / / / / / / // -->
-
+        
+        
+         <?php query_posts("category_name=ceremonia,viernes-de-clasicos"); ?>
+        
   		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   		<section id="publicacion" class="grises" id="post-<?php echo $postcount ?>">
@@ -53,7 +58,6 @@
             <!-- Verifica imagen horizontal o vertical -->
             
              <? 
-     
                         list($width, $height, $type, $attr) = getimagesize(get_first_image() ); 
                         if($width > $height)
                         {
@@ -75,7 +79,7 @@
   				<section id="tituloPostHome">
   					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>  
                   
-                    <a id="resumen"><?php echo $idImagenPost;  the_excerpt(); ?></a>
+                    <a id="resumen"><?php echo  the_excerpt(); ?></a>
   					 <!-- <p id="autor"> Autor:  </p> -->
                     
 

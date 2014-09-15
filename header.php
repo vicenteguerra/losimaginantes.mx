@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
@@ -116,7 +116,7 @@
       
       
     </section>
-    <section id="logo"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/GloboHeader.png" width="90px" height="90px"> </section>
+    <section id="logo"> <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/GloboHeader.png" width="90px" height="90px"> </a> </section>
   </section>
 
 						
