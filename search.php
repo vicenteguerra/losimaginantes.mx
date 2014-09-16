@@ -17,45 +17,29 @@
   		<!-- / / / / / / / / / / / / / / /  POST / / / / / / / / / / / // -->
         
         
-         
+         <?php query_posts("category_name=ceremonia,coberturas,conciertos,de-paseo-con,editorial,entrevistas,exclusivas,festival-marvin-2,galeria,la-nota-ilustrada,musica-a-traves-de-imagenes,miercoles-random,muati,nuevos-pero-chidos,papeles-voladores,peliculas,playlist-2,resena-album,resenas,uncategorized,viernes-de-clasicos,vive-latino"); ?>
         
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   		<section id="publicacion" class="grises" id="post-<?php echo $postcount ?>">
             
             <!-- Verifica imagen horizontal o vertical -->
             
              <? 
-                        
-                        if(!getimagesize(get_first_image() )){  
-                            $idImagenPost="vacio";
-                        }
-                        else{
-                            list($width, $height, $type, $attr) = getimagesize(get_first_image() ); 
-                            
-                           if($width > $height)
-                            {
-                                $idImagenPost="imgHorizontal";
-                            }
-                            else
-                            {
-                                $idImagenPost="imgVertical";  
-                            } 
-                        }
+                        $idImagenPost=ajusteImagen();   
             ?>
             
             <!-- Termina verificacion tama;o de imagen -->
             
             <section id="contenedorImagenPost" >
-                <img  id="<?php echo $idImagenPost; ?>" src="<?php if($idImagenPost!="vacio"){ echo get_first_image(); }else{ echo get_stylesheet_directory_uri(). "/images/globo.png";} ?>">
+                <img  id="<?php echo $idImagenPost; ?>" src="<?php echo existeImagen($idImagenPost); ?>"> <!-- Si no existe la imagen coloca el globo -->
             </section>
             
   			<section class="textoPublicacion">
   				<section id="tituloPostHome">
   					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>  
-    
                   
-                    <a id="resumen"><?php echo  the_excerpt(); ?></a>
+                    <a id="resumen">  <?php echo  excerpt('25'); ?></a>
   					 <!-- <p id="autor"> Autor:  </p> -->
                     
 
@@ -70,17 +54,7 @@
 	</section><!-- Fin Contenedor -->
   	
       
-      <?php 
-    $the_last_page = $wp_query->max_num_pages; 
-    $loaded_page = intval($paged); 
-?> 
-<?php if ( $the_last_page == $loaded_page) { ?> 
-    <a href="<?php previous_posts(); ?>#anchor" class="previous" style="margin-left:40px;">Posts Recientes</a> 
-<?php } elseif ($loaded_page == 0) { ?> 
-    <a href="<?php next_posts(); ?>#anchor" class="next">Posts Anteriores</a> 
-<?php } else { ?> 
-    <a href="<?php previous_posts(); ?>#anchor" class="previous" style="margin-left:40px;">Posts Recientes</a>  <a href="<?php next_posts(); ?>#anchor" class="next">Posts Anteriores</a> 
-<?php } ?>
+     
       
       
   </section> <!--  ********  TERMINA PUBLICACIONES ******** -->

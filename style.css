@@ -505,7 +505,8 @@ header{
 
     #contenedorImagenPost{
     background-color: #ddd;
-    
+        display:block;
+    overflow: hidden;
       height: 198px;
       width: 252px;
     }
@@ -517,7 +518,7 @@ header{
     }
     
     #imgHorizontal{
-       height: 198px;
+       height: 100%; /* 198px*/
        width: auto; 
     }
     
@@ -537,23 +538,66 @@ header{
 
 }
 
-    #contenedorPublicaciones{
-      margin-top: -80px;
-      display: inline-block;
-      text-align: center;
-      margin-bottom: 100px;
-    }
-
-    .textoPublicacion{
-
+     #contenedorPublicaciones{
+    margin-top: 0px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  
+  .textoPublicacion{
+  
   height: 130px;
   width: 100%;
-  margin-top: -4px;
-  background-color: #0c0c32;
-  color: #fff;
+  position: relative;
   display: inline-block;
+  margin-top: 0px;
+  background-color: #0c0c32;
 
   }
+    
+    .textoPublicacion h2 a{
+  color: #fff;
+  display: inline-block;
+  position: relative;
+ 
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration:none;
+  font-size: 13px;
+  text-align: left;
+  margin: 0 0;
+}
+    
+    #resumen {
+    margin-top: 15px;
+    color: #fff;
+    text-align: left;
+    height: 100%;
+    display: inline-flex;
+    font-size: 12px;
+    }
+    
+    #tituloPublicacion {
+    display: inline-flex;
+    
+    font-size: 14px;
+    height: 30%;
+    }
+    
+    #container {
+    text-align: center;
+    background-color: #eee;
+    width: 100%;
+    }
+    
+    #tituloPostHome{
+  width: 90%;
+  height: 50%;
+  margin-left: 5%;
+  display: inline-block;
+}
+
+    
 }
 
 /*  ---- TERMINA SMARTHPHONE ----*/
@@ -581,7 +625,8 @@ header{
 }
     
     #contenedorImagenPost{
-     vertical-align: middle;
+        overflow: hidden;
+    display:block;
     background-color: #ddd;
       height: 234px;
       width: 297px;
@@ -589,22 +634,23 @@ header{
     
     #imgVertical{
       height: auto;
-      width: 297px;
+      width: 100%; /* 297px */
     }
     
      #imgHorizontal{
-      height: 234px;
+      height: 100%; /* 234px */
       width: auto;
     }
     
      #vacio{
-      height: 234px;
+     
+      height: 100%; /* 234px */
       width: auto;
     }
     
 
-  #contenedorPublicaciones{
-    margin-top: -60px;
+ #contenedorPublicaciones{
+    margin-top: 0px;
     display: inline-block;
     text-align: center;
     padding-bottom: 100px;
@@ -614,14 +660,58 @@ header{
   
   height: 130px;
   width: 100%;
+  position: relative;
   display: inline-block;
-  margin-top: -4px;
+  margin-top: 0px;
   background-color: #0c0c32;
-      
+
   }
+    
+    .textoPublicacion h2 a{
+  color: #fff;
+  display: inline-block;
+  position: relative;
+ 
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration:none;
+  font-size: 13px;
+  text-align: left;
+  margin: 0 0;
+}
+    
+     #resumen {
+    margin-top: 15px;
+    color: #fff;
+    text-align: left;
+    height: 100%;
+    display: inline-flex;
+    font-size: 12px;
+    }
+    
+    #tituloPublicacion {
+    display: inline-flex;
+    
+    font-size: 14px;
+    height: 30%;
+    }
+    
+    #container {
+    text-align: center;
+    background-color: #eee;
+    width: 100%;
+    }
+    
+    #tituloPostHome{
+  width: 90%;
+  height: 50%;
+  margin-left: 5%;
+  display: inline-block;
 }
 
-@media only screen and ( min-width: 1180px)  {
+    
+}
+
+@media only screen and ( min-width: 1126px)  {
   #publicacion{
     margin-top: 100px;
     margin-left: 22.5px;
@@ -646,7 +736,7 @@ header{
    #imgVertical{
        position: relative;
       height: auto;
-      width: 297px;
+      width: 100%; /* 297px */
     }
     
      #imgHorizontal{
@@ -656,7 +746,7 @@ header{
     }
     
      #vacio{
-      height: 234px;
+      height: 100%; /* 234px */
       width: auto;
     }
     
@@ -689,6 +779,47 @@ header{
 
   }
     
+    .textoPublicacion h2 a{
+  color: #fff;
+  display: inline-block;
+  position: relative;
+ 
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration:none;
+  font-size: 13px;
+  text-align: left;
+  margin: 0 0;
+}
+    
+     #resumen {
+    margin-top: 15px;
+    color: #fff;
+    text-align: left;
+    height: 100%;
+    display: inline-flex;
+    font-size: 12px;
+    }
+    
+    #tituloPublicacion {
+    display: inline-flex;
+    
+    font-size: 14px;
+    height: 30%;
+    }
+    
+    #container {
+    text-align: center;
+    background-color: #eee;
+    width: 100%;
+    }
+    
+    #tituloPostHome{
+  width: 90%;
+  height: 50%;
+  margin-left: 5%;
+  display: inline-block;
+}
+
     
 }
 
@@ -803,6 +934,8 @@ header{
       width: 65%;
       height: 30px;
     }
+    
+    
 
 }
 
@@ -927,7 +1060,7 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
       margin-left: 22.5px;
       margin-right: 22.5px;
       padding-bottom: 40px;
-      background-color: #fff
+       border-radius: 2px;
     }   
 
       #WidgetFacebook{
@@ -1495,61 +1628,17 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 
 
 
-#tituloPostHome{
-  width: 90%;
-  height: 50%;
-  margin-left: 5%;
-  display: inline-block;
-}
-
-
-.textoPublicacion h2 a{
-  color: #fff;
-  display: inline-block;
-  position: relative;
- 
-  font-family: 'Fira Sans', sans-serif;
-  text-decoration:none;
-  font-size: 13px;
-  text-align: left;
-  margin: 0 0;
-}
-
-#autor{
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 11px;
-  color: #fff;
-}
 
 
 
 
-#tituloPublicacion {
-    display: inline-flex;
-    
-    font-size: 14px;
-    height: 30%;
-}
-
-#container {
-    text-align: center;
-    background-color: #eee;
-    width: 100%;
-}
 
 #containerWidgets {
     display: inline-block;
 }
 
 
-#resumen {
-    margin-top: -15px;
-    color: #fff;
-    text-align: left;
-    height: 100%;
-    display: inline-flex;
-    font-size: 12px;
-}
+
 /* ----------- - single.php - -------------- */
 #postPublicacion {
     width: 89%;
@@ -1637,3 +1726,8 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 }
 
 
+
+#contImgSlide {
+    text-align: center;
+    background-color: #fff;
+}

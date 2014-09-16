@@ -14,5 +14,46 @@ function get_first_image() {
     }
     return $first_img;
 }
+
+
+function ajusteImagen(){
+    
+    if(!getimagesize(get_first_image() )){  
+         $idImagenPost="vacio";
+     }
+    else{
+        list($width, $height, $type, $attr) = getimagesize(get_first_image() );   
+        if($width > $height)
+         {
+            $idImagenPost="imgHorizontal";
+         }
+         else
+         {
+             $idImagenPost="imgVertical";  
+         } 
+     }
+     return $idImagenPost;
+}
+
+function existeImagen($idImagenPost){
+    if($idImagenPost!="vacio")
+    { 
+        $ruta=get_first_image(); 
+    }else
+    { 
+        $ruta=get_stylesheet_directory_uri(). "/images/globo.png";
+    }   
+    return $ruta;
+}
+
+function excerpt($num) {
+    $limit = $num+1;
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt)."...";
+    echo $excerpt;
+}
+
+
 ?>
 

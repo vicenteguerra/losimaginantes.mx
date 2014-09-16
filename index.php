@@ -6,20 +6,21 @@
 				
         <?php query_posts("category_name=noticias"); ?>
         
+        
 							
 										<figure>
                                             <?php the_post(); ?>
                                             <section id="contImgSlide">
-                                                <img src="<?php echo get_first_image() ?>" alt="image06" />
+                                                <img id="<?php echo ajusteImagen();?>" src="<?php echo existeImagen(ajusteImagen()); ?>" alt="image06" />
                                                 
                                             </section>
                                             <input type="radio" name="radio-set" />
-                                            <figcaption><span><?php the_title(); ?></span></figcaption>
+                                            <figcaption><span><?php  the_title(); ?></span></figcaption>
 											
-											<figure>
+											<figure> 
                                                 <?php the_post(); ?>
                                                 <section id="contImgSlide">
-                                                    <img src="<?php echo get_first_image() ?>" alt="image07" />
+                                                <img id="<?php echo ajusteImagen();?>" src="<?php echo existeImagen(ajusteImagen()); ?>" alt="image07" />
                                                 </section>
 												
 												<input type="radio" name="radio-set" checked="checked"/>
@@ -29,7 +30,7 @@
                                                     <?php the_post(); ?>
                                                     
                                                     <section id="contImgSlide">
-                                                        <img src="<?php echo get_first_image() ?>" alt="image08" />
+                                                <img id="<?php echo ajusteImagen();?>" src="<?php echo existeImagen(ajusteImagen()); ?>" alt="image08" />
                                                         
                                                     </section>
                                                     <input id="ia-selector-last" type="radio" name="radio-set" />
@@ -72,35 +73,20 @@
             <!-- Verifica imagen horizontal o vertical -->
             
              <? 
-                        
-                        if(!getimagesize(get_first_image() )){  
-                            $idImagenPost="vacio";
-                        }
-                        else{
-                            list($width, $height, $type, $attr) = getimagesize(get_first_image() ); 
-                            
-                           if($width > $height)
-                            {
-                                $idImagenPost="imgHorizontal";
-                            }
-                            else
-                            {
-                                $idImagenPost="imgVertical";  
-                            } 
-                        }
+                        $idImagenPost=ajusteImagen();   
             ?>
             
             <!-- Termina verificacion tama;o de imagen -->
             
             <section id="contenedorImagenPost" >
-                <img  id="<?php echo $idImagenPost; ?>" src="<?php if($idImagenPost!="vacio"){ echo get_first_image(); }else{ echo get_stylesheet_directory_uri(). "/images/globo.png";} ?>">
+                <img  id="<?php echo $idImagenPost; ?>" src="<?php echo existeImagen($idImagenPost); ?>"> <!-- Si no existe la imagen coloca el globo -->
             </section>
             
   			<section class="textoPublicacion">
   				<section id="tituloPostHome">
   					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>  
                   
-                    <a id="resumen"><?php echo  the_excerpt(); ?></a>
+                    <a id="resumen">  <?php echo  excerpt('25'); ?></a>
   					 <!-- <p id="autor"> Autor:  </p> -->
                     
 
