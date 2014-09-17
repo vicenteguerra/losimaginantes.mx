@@ -15,7 +15,7 @@
                                                 
                                             </section>
                                             <input type="radio" name="radio-set" />
-                                            <figcaption><span><?php  the_title(); ?></span></figcaption>
+                                            <figcaption><a href="<?php the_permalink() ?>"><span><?php  the_title(); ?></span></a></figcaption>
 											
 											<figure> 
                                                 <?php the_post(); ?>
@@ -24,7 +24,7 @@
                                                 </section>
 												
 												<input type="radio" name="radio-set" checked="checked"/>
-												<figcaption><span><?php the_title(); ?></span></figcaption>											
+												<figcaption><a href="<?php the_permalink() ?>"><span><?php  the_title(); ?></span></a></figcaption>											
 
 												<figure>
                                                     <?php the_post(); ?>
@@ -34,7 +34,7 @@
                                                         
                                                     </section>
                                                     <input id="ia-selector-last" type="radio" name="radio-set" />
-                                                        <figcaption><span><?php the_title(); ?></span></figcaption>
+                                                       <figcaption><a href="<?php the_permalink() ?>"><span><?php  the_title(); ?></span></a></figcaption>
 													
 												</figure>
 												
@@ -63,6 +63,9 @@
 
   		<!-- / / / / / / / / / / / / / / /  POST / / / / / / / / / / / // -->
         
+        
+
+
         
          <?php query_posts("category_name=ceremonia,coberturas,conciertos,de-paseo-con,editorial,entrevistas,exclusivas,festival-marvin-2,galeria,la-nota-ilustrada,musica-a-traves-de-imagenes,miercoles-random,muati,nuevos-pero-chidos,papeles-voladores,peliculas,playlist-2,resena-album,resenas,uncategorized,viernes-de-clasicos,vive-latino"); ?>
         

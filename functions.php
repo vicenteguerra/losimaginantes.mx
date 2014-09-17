@@ -1,6 +1,4 @@
 <?php
-
-
 function get_first_image() {
     global $post, $posts;
     $first_img = "";
@@ -18,7 +16,7 @@ function get_first_image() {
 
 function ajusteImagen(){
     
-    if(!getimagesize(get_first_image() )){  
+    if(!@getimagesize(get_first_image() )){  
          $idImagenPost="vacio";
      }
     else{
@@ -55,5 +53,13 @@ function excerpt($num) {
 }
 
 
-?>
+function linkCategory($categoria){
+    // Get the ID of a given category
+    $category_id = get_cat_ID( $categoria );
 
+    // Get the URL of this category
+    $category_link = get_category_link( $category_id );
+    return $category_link;
+}
+
+?>
