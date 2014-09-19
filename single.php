@@ -3,7 +3,7 @@
 <script>
       window.fbAsyncInit = function() {
         FB.init({
-          appId      : '224245647630343',
+          appId      : '281387682050732',
           xfbml      : true,
           version    : 'v2.0'
         });
@@ -37,7 +37,7 @@
             </section>
             <section id="postComments">
                 <h3 class="postRev">REVELATE, ¿QUÉ PIENSAS?</h3>
-                <div class="fb-comments" data-href="http://example.com/comments" data-width="650" data-numposts="5" data-colorscheme="light"></div>
+                <div class="fb-comments" data-href="<?php echo the_permalink();?>" data-width="650" data-numposts="3" data-colorscheme="light"></div>
             </section>
             <?php endwhile; else: ?>
             <h2>No encontrado</h2>
