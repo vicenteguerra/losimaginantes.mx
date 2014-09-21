@@ -862,8 +862,15 @@ header{
     #RedesSociales img{
       width: auto;
       height: 18px;
+      opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+       
+        
+    #RedesSociales img:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
     }
-    
     
 
     #RedesSociales{
@@ -922,6 +929,13 @@ header{
     #RedesSociales img{
       width: auto;
       height: 18px;
+      opacity: 1.0;
+      filter: alpha(opacity=100); 
+    }
+    
+    #RedesSociales img:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
     }
 
     #textoFooter{
