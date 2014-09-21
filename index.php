@@ -1,4 +1,6 @@
 <?php get_header(); $postcount = 1;?>
+        <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/tabs.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/tabstyles.css" />
 
 <section id="slide">
 
@@ -45,18 +47,47 @@
     
 </section>
  
-
-  <section class="menudes">
-  <ul>
-    <li><a href="">Musica</a></li>
-    <li ><a href="">Moda</a></li>
-    <li><a href="">Cooltura</a></li>
-   <div class="marca"></div>
-    <section id="linea">
+<!--  -  --- - - --  -- - - --  MENU ACTIVE MUSICA CULTURA  -------------------- - -->
   
-    </section>
- </ul>
-</section>
+
+
+
+<section id="contenedorCatMenu">
+                <section id="bandaCatMenu">
+                </section>
+                <section id="catMenu">
+                    <div class="tabs tabs-style-linemove">
+                        <nav>
+                            <ul>
+                                <li><a href="#section-linemove-1" ><span>Musica</span></a></li>
+                                <li><a href="#section-linemove-2" ><span>Moda</span></a></li>
+                                <li><a href="#section-linemove-3" ><span>Cooltura</span></a></li>
+
+                            </ul>
+                        </nav>
+                        <div class="content-wrap">
+                            <section id="section-linemove-1"><p>1</p></section>
+                            <section id="section-linemove-2"><p>2</p></section>
+                            <section id="section-linemove-3"><p>3</p></section>
+                        </div><!-- /content -->
+                    </div><!-- /tabs -->
+                </section>
+                
+            </section>
+                
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+
+<!--  -  --- - - --  -- - - --  TERMINA MENU ACTIVE MUSICA CULTURA  -------------------- - -->
+  
 <section id="container">
   <section id="publicaciones"> <!--  ********  INICIA PUBLICACIONES ******** -->
   	<section id="contenedorPublicaciones">
