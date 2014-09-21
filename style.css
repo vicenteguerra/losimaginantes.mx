@@ -1655,7 +1655,7 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
 
 /* ----------- - single.php - -------------- */
 #postPublicacion {
-    width: 89%;
+    width: 62%;
     margin-left: 5%;
     padding-bottom: 40px;
     background-color: white;
@@ -1678,7 +1678,7 @@ left: 35%; /* 1/4 Ancho del enlace + 3 veces ancho enlace */
     font-family: 'Fira Sans', sans-serif;
     color: #414141;
     font-size: 12pt;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 #contenedorPublicacion a{
 color: #414141;
@@ -1686,7 +1686,7 @@ color: #414141;
 
 #postBarra {
     background-color: #a42f50;
-    width: 90.6%;
+    width: 63.67%;
     margin-left: 3%;
     padding: 3px;
 }
@@ -1739,9 +1739,80 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     text-align: center;
 }
 
-
-
 #contImgSlide {
     text-align: center;
     background-color: #fff;
 }
+/*Lo mas leido*/
+.relatedThumbs {
+    width: 24%;
+    height: 170px;
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#postRelated {
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+#tableThumbs {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: inline-block;
+    width: 88%;
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 6%;
+    font-size: 13pt;
+    color: #a42f50;
+    height: 330px;
+}
+
+#plusleido {
+    margin: 0;
+    padding-top: 45px;
+    padding-bottom: 24px;
+}
+.linkrelPost:hover  .titlePost{
+    opacity: 1;
+    border-top: 4px solid #a42f50;
+}
+.linkrelPost:hover  .relatedThumbs{
+    border-bottom: 0px;
+    -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.titlePost{
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    font-size:11pt; 
+    margin-bottom: 0;
+    padding-top: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    opacity: 0;
+    left: 0;
+    text-decoration: none;
+    max-height: 35px;
+    height: 35px;
+    color: #2e2e2e;
+    width: 100%;
+    text-align: center;
+}
+
+
