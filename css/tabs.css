@@ -1,6 +1,14 @@
 /* Default tab style */
+@font-face
+{
+ font-family: FiraRegular1;
+ src: url(../fonts/firasans-master/FiraSans-Regular.otf);
+}
+
 
 #contenedorCatMenu{
+    
+    z-index: 0;
     width: 100%;
     background-color: #dff0ef;
     height: 60px;
@@ -9,10 +17,11 @@
 #catMenu{
     width: 50%;
     margin: auto;
-    
+    z-index: 0;
 }
 
 #bandaCatMenu{
+    z-index: 0;
     height: 5px;
     position: relative;
     top: 55px;
@@ -28,6 +37,7 @@
 	width: 100%;
 	font-weight: 300;
 	font-size: 1.25em;
+    z-index: 0;
 }
 
 /* Nav */
@@ -82,6 +92,9 @@
 .tabs nav a span {
 	vertical-align: middle;
 	font-size: 0.75em;
+    font-family:FiraRegular1,Helvetica;
+        z-index: -1;
+    text-transform: uppercase;
 }
 
 .tabs nav li.tab-current a {

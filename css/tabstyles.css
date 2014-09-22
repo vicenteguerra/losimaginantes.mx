@@ -1,5 +1,10 @@
 /* Individual tab styles */
 
+@font-face
+{
+ font-family: FiraRegular1;
+ src: url(/fonts/firasans-master/FiraSans-Regular.otf);
+}
 
 
 /*****************************/
@@ -25,12 +30,12 @@
 
 /* Move the line   sirve -----------------------------------------------------------------------------------------------------------*/
 .tabs-style-linemove nav li:first-child.tab-current ~ li:last-child::before {
-	-webkit-transform: translate3d(-400%,0,0);
+	-webkit-transform: translate3d(-200%,0,0);
 	transform: translate3d(-200%,0,0);
 }
 
 .tabs-style-linemove nav li:nth-child(2).tab-current ~ li:last-child::before {
-	-webkit-transform: translate3d(-300%,0,0);
+	-webkit-transform: translate3d(-100%,0,0);
 	transform: translate3d(-100%,0,0);
 }
 
@@ -39,6 +44,7 @@
 	padding: 1em 0;
 	color: #000;
 	line-height: 1;
+    text-decoration:none;
 	-webkit-transition: color 0.3s, -webkit-transform 0.3s; 
 	transition: color 0.3s, transform 0.3s;
 }
@@ -46,7 +52,6 @@
 
 
 .tabs-style-linemove nav a span {
-	font-weight: 700;
 }
 
 /*****************************--------------------------------------------------------------------------------------------------------------/

@@ -72,39 +72,38 @@
       	 
 
       <ul id="lmenu" role="navigation">
-	  <li><a href="<? echo linkCategory('noticias'); ?>">Noticias</a></li>
+	  <li><a href="<?php echo home_url(); ?>/category/noticias">Noticias</a></li>
 	  
-	  <li><a href="<? echo linkCategory('papeles-voladores'); ?>" aria-haspopup="true">Papeles Voladores</a></li>
-	  <li><a href="<? echo linkCategory('resenas'); ?>" aria-haspopup="true">Reseñas</a>
+	  <li><a href="<?php echo home_url(); ?>/category/papeles-voladores" aria-haspopup="true">Papeles Voladores</a></li>
+	  <li><a href="<?php echo home_url(); ?>/category/resenas" aria-haspopup="true">Reseñas</a>
 	    <ul>
-	      <li><a href="<? echo linkCategory('conciertos'); ?>">Conciertos</a></li>
-	      <li><a href="<? echo linkCategory('galeria'); ?>">Galerías</a></li>
-	      <li><a href="<? echo linkCategory('resena-album'); ?>">Discos</a></li>
-	      <li><a href="<? echo linkCategory('peliculas'); ?>">Cine Soundtracks</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/conciertos">Conciertos</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/galeria">Galerías</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/resena-album">Discos</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/peliculas">Cine Soundtracks</a></li>
 	    </ul>
 	  </li>
-	  <li><a href="<? echo linkCategory('editorial'); ?>" aria-haspopup="true">Editorial</a>
+	  <li><a href="<?php echo home_url(); ?>/category/editorial" aria-haspopup="true">Editorial</a>
 	    <ul>
-	      <li><a href="<? echo linkCategory('musica-a-traves-de-imagenes'); ?>">MATDI</a></li>
-	      <li><a href="<? echo linkCategory('la-nota-ilustrada'); ?>">La nota ilustrada</a></li>
-	      <li><a href="<? echo linkCategory('musica-a-traves-de-imagenes'); ?>">Playlist</a></li>
-	      <li><a href="<? echo linkCategory('nuevos-pero-chidos'); ?>">Nuevos pero chidos</a></li>
-	      <li><a href="<? echo linkCategory('viernes-de-clasicos'); ?>">Viernes de Clásicos</a></li>
-	      <li><a href="<? echo linkCategory('entrevistas'); ?>">Entrevistas</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/musica-a-traves-de-imagenes">MATDI</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/la-nota-ilustrada">La nota ilustrada</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/musica-a-traves-de-imagenes">Playlist</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/nuevos-pero-chidos">Nuevos pero chidos</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/viernes-de-clasicos">Viernes de Clásicos</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/entrevistas">Entrevistas</a></li>
 	      <li><a href="">Especiales</a></li>
-	      <li><a href="<? echo linkCategory('moda'); ?>">Moda</a></li>
-	      <li><a href="<? echo linkCategory('cultura'); ?>">Cooltura</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/moda">Moda</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/cultura">Cooltura</a></li>
 	    </ul>
 	  </li>
-	  <li><a href="<? echo linkCategory('coberturas'); ?>" aria-haspopup="true">Coberturas</a>
+	  <li><a href="<?php echo home_url(); ?>/category/coberturas" aria-haspopup="true">Coberturas</a>
 	    <ul>
-	      <li><a href="<? echo linkCategory('corona-capital'); ?>" aria-haspopup="true">Corona Capital 14</a></li>
+	      <li><a href="<?php echo home_url(); ?>/category/corona-capital" aria-haspopup="true">Corona Capital 14</a></li>
 	    </ul>
 	  </li>
 	  <li><a href="<?php echo home_url(); ?>/contacto">Contacto</a>
 	    <ul>
-	      <li><a href="" aria-haspopup="true">Contacto</a></li>
-	      <li><a href="">Staff</a></li>
+ 	      <li><a href="">Staff</a></li>
 	      <li><a href="">Colaboradores</a></li>
 	    </ul>
 	  </li>
