@@ -1613,6 +1613,7 @@ header{
 #postTexto {
     text-align: left;
     padding-top: 40px;
+    max-width:  90%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -1632,7 +1633,7 @@ color: #414141;
 
 #postBarra {
     background-color: #a42f50;
-    width: 63.67%;
+    width: 63.5%;
     margin-left: 3%;
     padding: 3px;
 }
@@ -1659,6 +1660,7 @@ color: #414141;
     border-top: 7px solid #a42f50;
     background-color: #f4f4f4;
     width: 700px;
+    max-width: 100%;
     margin-left: -1.6%;
     text-align: center;
 }
@@ -1673,6 +1675,7 @@ color: #414141;
 img.alignright { float: right; margin: 0 0 1em 1em; }
 img.alignleft { float: left; margin: 0 1em 1em 0; }
 img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+img{max-width: 100%; height: auto;}
 .alignright { float: right; }
 .alignleft { float: left; }
 .aligncenter { display: block; margin-left: auto; margin-right: auto; }
@@ -1760,5 +1763,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     width: 100%;
     text-align: center;
 }
+
+
 
 
