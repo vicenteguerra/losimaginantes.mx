@@ -1,6 +1,5 @@
 <?php 
 get_header();
-get_sidebar();
 wpb_vistas_por_posts(get_the_ID());
 ?>
 
@@ -22,10 +21,10 @@ wpb_vistas_por_posts(get_the_ID());
        }(document, 'script', 'facebook-jssdk'));
     </script>
 <section id="contenedorPublicacion">
-    <section id="postBarra">
-        <br>
-    </section>
+    <?php get_sidebar();?>
     <section id="postPublicacion">
+        <section id="postBarra">
+        </section>
         <section id="postTexto">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <section id="postTitle">
@@ -41,7 +40,7 @@ wpb_vistas_por_posts(get_the_ID());
             </section>
             <section id="postComments">
                 <h3 class="postRev">REVELATE, ¿QUÉ PIENSAS?</h3>
-                <div class="fb-comments"data-href="http://losimaginantes.mx/" data-num-posts="2" mobile="false"></div>
+                <div data-width="650" class="fb-comments" data-href="http://losimaginantes.mx/" data-num-posts="2" mobile="false" ></div>
 <style>.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {width: 100% !important;}
 .fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {width: 100% !important;}
 </style>
