@@ -59,7 +59,7 @@
                     <div class="tabs tabs-style-linemove">
                         <nav>
                             <ul>
-                                <li><a href="#section-linemove-1" ><span>Musica</span></a></li>
+                                <li><a href="#section-linemove-1" ><span>Musica<?php echo linkCategory('noticias');?></span></a></li>
                                 <li><a href="#section-linemove-2" ><span>Moda</span></a></li>
                                 <li><a href="#section-linemove-3" ><span>Cooltura</span></a></li>
 

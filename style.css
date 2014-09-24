@@ -1602,6 +1602,7 @@ header{
 /* ----------- - single.php - -------------- */
 #postPublicacion {
     width: 62%;
+    z-index: 1;
     margin-left: 5%;
     padding-bottom: 40px;
     background-color: white;
@@ -1764,6 +1765,32 @@ img{max-width: 100%; height: auto;}
     text-align: center;
 }
 
+.triangulo_top_right {
+    position: absolute;
+    margin-left: 3%;
+    width: 0;
+    height: 0;
+    border-top: 26px solid #000; 
+    border-left: 26px solid transparent;           
+}
 
 
 
+#contImagenCategory {
+    width: 290px;
+    height: 200px;
+    background-color: #ddd;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+}
+
+#textoCategory {
+    width: 300px;
+    height: 200px;
+    background-color: #0f0;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+}

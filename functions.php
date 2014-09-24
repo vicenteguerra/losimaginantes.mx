@@ -61,6 +61,7 @@ function linkCategory($categoria){
     $category_link = get_category_link( $category_id );
     return $category_link;
 }
+
 function wpb_vistas_por_posts($postID) {
     $count_key = 'wpb_vistas_por_posts';
     $count = get_post_meta($postID, $count_key, true);
