@@ -1625,6 +1625,7 @@ header{
     background-color: #aec3c1;
     font-family: FiraRegular1, Helvetica;
     color: #414141;
+    min-height: 1600px;
     font-size: 12pt;
     padding-bottom: 100px;
 }
@@ -1634,9 +1635,9 @@ color: #414141;
 
 #postBarra {
     background-color: #a42f50;
-    width: 63.5%;
-    margin-left: 3%;
-    padding: 3px;
+    width: 103%;
+    margin-left: -3%;
+    height: 24px;
 }
 
 #postTitle {
@@ -1660,8 +1661,9 @@ color: #414141;
     margin-top: 50px;
     border-top: 7px solid #a42f50;
     background-color: #f4f4f4;
-    width: 700px;
+    width: 660px;
     max-width: 100%;
+    padding-left: 10px;
     margin-left: -1.6%;
     text-align: center;
 }
@@ -1750,7 +1752,7 @@ img{max-width: 100%; height: auto;}
     background-color: white;
     position: absolute;
     bottom: 0;
-    font-size:11pt; 
+    font-size:10pt; 
     margin-bottom: 0;
     padding-top: 13px;
     padding-left: 5px;
@@ -1764,7 +1766,16 @@ img{max-width: 100%; height: auto;}
     width: 100%;
     text-align: center;
 }
+/*Termina lo mas leido*/
+/*Sidebar*/
+#sidebar {
+    float: right;
+    margin-right: 3.7%;
+    width: 25%;
+    padding-bottom: 2px;
+}
 
+<<<<<<< HEAD
 .triangulo_top_right {
     position: absolute;
     margin-left: 3%;
@@ -1772,10 +1783,55 @@ img{max-width: 100%; height: auto;}
     height: 0;
     border-top: 26px solid #000; 
     border-left: 26px solid transparent;           
+=======
+#sideBarra {
+    background-color: #a42f50;
+    width: 107%;
+    height: 24px;
+    float: right;
+>>>>>>> FETCH_HEAD
 }
 
+#sidebarContainer {
+    background-color: white;
+    padding-top: 44px;
+    width: 100%;
+    padding-bottom: 44px;
+    -webkit-box-shadow: 0px 0px 1px 0px #e0e8e7;
+    -moz-box-shadow:    0px 0px 1px 0px #e0e8e7;
+    box-shadow:         0px 0px 1px 0px #e0e8e7;
+}
+#sideThumbs {
+    text-align: center; 
+    font-size: 12pt;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0;
+    padding: 0;
+    font-family: FiraRegular1, Helvetica;
+    color: #a42f50;
+}
 
+#spotifyList {
+    height: 400px;
+    width: 100%;
+    padding-top: 40px;
+}
+.embed-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 100%;
+    overflow: hidden;
+    max-width: 100%; }
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+/*Termina Sidebar*/
 
+<<<<<<< HEAD
 #contImagenCategory {
     width: 290px;
     height: 200px;
@@ -1793,4 +1849,10 @@ img{max-width: 100%; height: auto;}
     display: inline-block;
     position: relative;
     margin-left: 20px;
+=======
+#imgSidebar {
+    width: auto;
+    max-width: 90%;
+    max-height: 980px;
+>>>>>>> FETCH_HEAD
 }
