@@ -3,56 +3,7 @@
 
  <? // echo wp_list_pages(); ?>
 
-<section id="contenedorPublicacion">
-    <section id="postBarra">
-        <br>
-    </section>
-    <section class="triangulo_top_right">
-    
-    </section>
-    <section id="postPublicacion">
-            <section id="postTexto">
-                <section id="postTitle">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/flecha.png"><a><?php single_cat_title(); ?></a>
-                </section>
-                <br><br>
-                
-                <?php query_posts("category_name='noticias'"); ?>
 
-                <?php if ( have_posts() ) : while ( have_posts()&&$postcount<6 ) : the_post(); ?>
-                
-                <!-- Verifica imagen horizontal o vertical -->
-            
-             <? 
-                        $idImagenPost=ajusteImagen();   
-            ?>
-            
-            <!-- Termina verificacion tama;o de imagen -->
-                
-                
-                <section id="contImagenCategory">
-                    <img  id="<?php echo $idImagenPost; ?>" src="<?php echo existeImagen($idImagenPost); ?>">
-                </section>
-                <section id="textoCategory">
-                <section id="tituloPostHome">
-  					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>  
-                  
-                    <a id="resumen">  <?php echo  excerpt('25'); ?></a>
-  					 <!-- <p id="autor"> Autor:  </p> -->
-                    
-
-  				</section>
-  				
-  			</section> <!-- Fin  section textoPublicacion -->
-                </section>
-                
-                <?php $postcount++; endwhile; else: ?>Lo sentimos, no se han encontrado entradas.
-		      <?php endif; ?>
-                
-            </section>
-    </section>
-    
-</section>
 
 
 <section id="postRelated">

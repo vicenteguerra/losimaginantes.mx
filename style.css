@@ -1774,22 +1774,14 @@ img{max-width: 100%; height: auto;}
     width: 25%;
     padding-bottom: 2px;
 }
+          
 
-<<<<<<< HEAD
-.triangulo_top_right {
-    position: absolute;
-    margin-left: 3%;
-    width: 0;
-    height: 0;
-    border-top: 26px solid #000; 
-    border-left: 26px solid transparent;           
-=======
 #sideBarra {
     background-color: #a42f50;
     width: 107%;
     height: 24px;
     float: right;
->>>>>>> FETCH_HEAD
+
 }
 
 #sidebarContainer {
@@ -1831,7 +1823,7 @@ img{max-width: 100%; height: auto;}
     height: 100%; }
 /*Termina Sidebar*/
 
-<<<<<<< HEAD
+
 #contImagenCategory {
     width: 290px;
     height: 200px;
@@ -1849,10 +1841,10 @@ img{max-width: 100%; height: auto;}
     display: inline-block;
     position: relative;
     margin-left: 20px;
-=======
+
 #imgSidebar {
     width: auto;
     max-width: 90%;
     max-height: 980px;
->>>>>>> FETCH_HEAD
+
 }
