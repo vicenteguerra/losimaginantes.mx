@@ -1,7 +1,57 @@
-<?php get_header(); $postcount = 1;?>
+
+<?php get_header(); $postcount = 1;?> 
+
+<?php $current_category = single_cat_title("", false);
+    $consulta=""."category_name='".$current_category."'";
+?>
 
 
+ 
  <? // echo wp_list_pages(); ?>
+<section id="mainContainer">
+    
+    <section id="catContenedor">       
+        <section id="postBarra">
+        </section>
+           
+        <section id="categoryTitle">  ► <?php echo $current_category;?>  </section>
+        
+        
+        <?php query_posts($consulta); ?>
+
+                <?php if ( have_posts() ) : while ( have_posts()&&$postcount<6 ) : the_post(); ?>
+                
+                <!-- Verifica imagen horizontal o vertical -->
+            
+             <? 
+                        $idImagenPost=ajusteImagen();   
+            ?>
+            
+            <!-- Termina verificacion tama;o de imagen -->
+        
+            <section id="imagenPostCategory" class="grises">
+               
+                    <img  id="<?php echo $idImagenPost; ?>" src="<?php echo existeImagen($idImagenPost); ?>">
+                
+            </section>
+        
+            <section id="contPostCategory">
+                <h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>  
+                
+                <a id="resumenCat">  <?php echo  excerpt('30'); ?></a>
+  					 
+
+            </section>
+        
+          <?php $postcount++; endwhile; else: ?> Lo sentimos, no se han encontrado entradas.
+        <?php endif; ?>
+   
+
+    </section> <!-- FIN CATCONTENEDOR -->
+    
+    <?php get_sidebar();?>
+    
+</section>
 
 
 

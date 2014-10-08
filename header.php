@@ -28,7 +28,10 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/demo.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/styleSlide.css" />
 
+<?php if ( is_category() or is_single() ) {
+    echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"".get_stylesheet_directory_uri()."/css/category.css\" />
 
+"; } ?>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/modernizr.custom.79639.js"></script>

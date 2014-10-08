@@ -52,6 +52,14 @@ function excerpt($num) {
     echo $excerpt;
 }
 
+function titleCut($num) {
+    $limit = $num+1;
+    $excerpt = explode(' ', get_the_title(), $limit);
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt)."...";
+    echo $excerpt;
+}
+
 
 function linkCategory($categoria){
     // Get the ID of a given category

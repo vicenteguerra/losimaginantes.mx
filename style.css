@@ -488,7 +488,7 @@ header{
 
 
 .mainFixed{
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .fixed { 
@@ -1602,9 +1602,11 @@ header{
 /* ----------- - single.php - -------------- */
 #postPublicacion {
     width: 62%;
-    z-index: 1;
+    z-index: 0;
     margin-left: 5%;
-    padding-bottom: 40px;
+    margin-top: 60px;
+    display: inline-block;
+    margin-bottom: 50px;
     background-color: white;
     -webkit-box-shadow: 0px 0px 1px 0px #e0e8e7;
     -moz-box-shadow:    0px 0px 1px 0px #e0e8e7;
@@ -1621,7 +1623,7 @@ header{
 
 #contenedorPublicacion {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 0;
     background-color: #aec3c1;
     font-family: FiraRegular1, Helvetica;
     color: #414141;
@@ -1634,7 +1636,7 @@ color: #414141;
 }
 
 #postBarra {
-    background-color: #a42f50;
+    background-color: #c73157 ;
     width: 103%;
     margin-left: -3%;
     height: 24px;
@@ -1824,15 +1826,7 @@ img{max-width: 100%; height: auto;}
 /*Termina Sidebar*/
 
 
-#contImagenCategory {
-    width: 290px;
-    height: 200px;
-    background-color: #ddd;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    margin-right: 20px;
-}
+
 
 #textoCategory {
     width: 300px;
@@ -1841,7 +1835,7 @@ img{max-width: 100%; height: auto;}
     display: inline-block;
     position: relative;
     margin-left: 20px;
-
+}
 #imgSidebar {
     width: auto;
     max-width: 90%;

@@ -20,7 +20,7 @@ wpb_vistas_por_posts(get_the_ID());
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
-<section id="contenedorPublicacion">
+<section id="mainContainer">
     <?php get_sidebar();?>
     <section id="postPublicacion">
         <section id="postBarra">
