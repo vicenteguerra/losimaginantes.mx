@@ -1,5 +1,6 @@
 <aside id="lateral">
         <section id="postBarra">
+            <section class="trianguloNegro" id="trianguloNegroSidebar"></section>
         </section>
 
         <section id="recomendacionesTitle">

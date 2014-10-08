@@ -1669,6 +1669,16 @@ color: #414141;
     margin-left: -1.6%;
     text-align: center;
 }
+.trianguloNegro{
+    height: 15px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    right: 93%;
+    margin-top: 24px;
+    border-left: 15px solid #aec3c1;
+    border-top: 15px solid black;
+}
 .postRev{
     margin-left: 2.5%;
     text-align: left; 
@@ -1841,4 +1851,11 @@ img{max-width: 100%; height: auto;}
     max-width: 90%;
     max-height: 980px;
 
+}
+
+#trianguloNegroSidebar {
+    right: 100%;
+    border-left: 8px solid #aec3c1;
+    border-top: 8px solid black;
+    height: 8px;
 }

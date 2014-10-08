@@ -24,6 +24,7 @@ wpb_vistas_por_posts(get_the_ID());
     <?php get_sidebar();?>
     <section id="postPublicacion">
         <section id="postBarra">
+            <section class="trianguloNegro"></section>
         </section>
         <section id="postTexto">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
