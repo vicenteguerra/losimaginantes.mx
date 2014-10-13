@@ -41,7 +41,7 @@ wpb_vistas_por_posts(get_the_ID());
             </section>
             <section id="postComments">
                 <h3 class="postRev">REVELATE, ¿QUÉ PIENSAS?</h3>
-                <div data-width="650" class="fb-comments" data-href="http://losimaginantes.mx/" data-num-posts="2" mobile="false" ></div>
+                <div data-width="650" class="fb-comments" data-href="<?php the_permalink(); ?>" data-num-posts="2" mobile="false" ></div>
 <style>.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {width: 100% !important;}
 .fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {width: 100% !important;}
 </style>
