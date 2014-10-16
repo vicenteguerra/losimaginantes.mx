@@ -1465,7 +1465,6 @@ header{
 
   @media screen and (min-width: 769px) {
 
-
   .sb-search {
     display: inline-block;
     right: 30%;
@@ -1579,7 +1578,7 @@ header{
     z-index: 90;
   }
 
-
+}
 
 /* ----------- - TERMINA NORMAL - -------------- */
 
@@ -1600,10 +1599,15 @@ header{
 
 
 /* ----------- - single.php - -------------- */
-#postPublicacion {
+      
+      
+      
+@media only screen and (min-width: 1062px){
+
+   #postPublicacion {
     width: 62%;
     z-index: 0;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 60px;
     display: inline-block;
     margin-bottom: 50px;
@@ -1611,7 +1615,29 @@ header{
     -webkit-box-shadow: 0px 0px 1px 0px #e0e8e7;
     -moz-box-shadow:    0px 0px 1px 0px #e0e8e7;
     box-shadow:         0px 0px 1px 0px #e0e8e7;
+   }
 }
+
+
+@media only screen and (max-width: 1061px){
+    #postPublicacion {
+    width: 92%;
+    z-index: 0;
+    margin-left: 4%;
+    margin-top: 60px;
+    display: inline-block;
+    margin-bottom: 50px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 1px 0px #e0e8e7;
+    -moz-box-shadow:    0px 0px 1px 0px #e0e8e7;
+    box-shadow:         0px 0px 1px 0px #e0e8e7;
+    }
+}
+      
+      
+      
+      
+
 
 #postTexto {
     text-align: left;

@@ -21,7 +21,7 @@
                    
                 ?>  
         
-					<h3 class="textCircle"> <?php titleCut(6); ?></h3>
+					<h3 class="textCircle"> <?php titleCut(4); ?></h3>
          <section id="postCirculo">
               <!-- Verifica imagen horizontal o vertical -->
             
