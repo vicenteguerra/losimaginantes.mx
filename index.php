@@ -113,7 +113,7 @@
             <!-- Termina verificacion tama;o de imagen -->
             
             <section id="contenedorImagenPost" >
-                <img  id="<?php echo $idImagenPost; ?>" src="<?php echo existeImagen($idImagenPost); ?>"> <!-- Si no existe la imagen coloca el globo -->
+               <a href="<?php the_permalink() ?>" ><img id="<?php echo $idImagenPost; ?>" src="<?php echo existeImagen($idImagenPost); ?>" ></a>  <!-- Si no existe la imagen coloca el globo -->
             </section>
             
   			<section class="textoPublicacion">

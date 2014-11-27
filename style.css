@@ -589,12 +589,13 @@ header{
 }
     
     #resumen {
-    margin-top: 15px;
+    margin-top: 22px;
     color: #fff;
     text-align: left;
     height: 100%;
     display: inline-flex;
     font-size: 12px;
+    line-height: 15px
     }
     
     #tituloPublicacion {
@@ -699,13 +700,14 @@ header{
   margin: 0 0;
 }
     
-     #resumen {
-    margin-top: 15px;
-    color: #fff;
-    text-align: left;
-    height: 100%;
-    display: inline-flex;
-    font-size: 12px;
+    #resumen {
+        margin-top: 22px;
+        color: #fff;
+        text-align: left;
+        height: 100%;
+        display: inline-flex;
+        font-size: 12px;
+        line-height: 15px
     }
     
     #tituloPublicacion {
@@ -811,13 +813,14 @@ header{
   margin: 0 0;
 }
     
-     #resumen {
-    margin-top: 15px;
-    color: #fff;
-    text-align: left;
-    height: 100%;
-    display: inline-flex;
-    font-size: 12px;
+    #resumen {
+        margin-top: 22px;
+        color: #fff;
+        text-align: left;
+        height: 100%;
+        display: inline-flex;
+        font-size: 12px;
+        line-height: 15px
     }
     
     #tituloPublicacion {
@@ -1698,6 +1701,7 @@ color: #414141;
 
 #postComments {
     margin-top: 50px;
+    margin-bottom: 20px;
     border-top: 7px solid #a42f50;
     background-color: #f4f4f4;
     width: 660px;
