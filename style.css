@@ -39,13 +39,20 @@ header{
   background-color: #eee;
 }
 
-/*  -------- PUBLICIDAD HEADER  --------- */ 
+/*  ------------ BANERS  PUBLICIDAD -------------------- */ 
+
+
+
+
 
 /*  ---- SMARTHPHONE ----*/
 
 @media only screen and (max-width: 590px){
+    #contenedorPublicidad{
+        height: 145px;
+    }
    #publicidadL{
-    background-image: url("images/Banner-Imagina-CCmini.gif");
+   /* background-image: url("images/bannerLmini.gif"); */
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 30px;
@@ -63,9 +70,12 @@ header{
 
 /*  ---- TABLETS ----*/
 
-@media only screen and (min-width: 591px) and ( max-width: 1179px) {
+@media only screen and (min-width: 591px) and ( max-width: 1182px) {
+    #contenedorPublicidad{
+        height: 200px;
+    }
   #publicidadL{
-    background-image: url("images/BP-imaginacc.gif");
+   /* background-image: url("images/bannerL.gif"); */
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 30px;
@@ -82,9 +92,10 @@ header{
 
 /*  ---- NORMAL  ----*/
 
-@media only screen and ( min-width: 1180px) {
+@media only screen and ( min-width: 1182px) {
+    
    #publicidadL{
-    background-image: url("images/BP-imaginacc.gif");
+  /*  background-image: url("images/bannerL.gif"); */
     display: inline-block;
     margin-left: 19px;
     margin-right: 19px;
@@ -97,7 +108,6 @@ header{
 
   #publicidadR{
     display: inline-block;
-    background-image: url("images/HHIMA.png");
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 35px;
@@ -913,11 +923,12 @@ header{
 @media screen and (min-width: 769px) {
     
     footer{
-    display: inline-block;
+    position: fixed;
+    bottom: 0;
     color: #fff;
     height: 0px;
     width: 100%;
-    margin-top: 0px;
+    
     padding-bottom: 60px;
     background-color: #0c0c32;
     left: 0;

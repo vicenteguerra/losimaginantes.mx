@@ -44,10 +44,10 @@
   <header >
   	<section id="contenedorPublicidad">
   		<section id="publicidadL">
-      	
+      	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bannerL.gif">
     </section>
      <section id="publicidadR">
-      	
+      	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bannerR.png">
     </section>
 
 
