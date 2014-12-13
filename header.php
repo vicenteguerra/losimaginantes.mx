@@ -23,6 +23,7 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/doubletaptogo.js"></script>
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/funciones.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/demo.css" />
@@ -36,11 +37,33 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/modernizr.custom.79639.js"></script>
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/modernizr.custom.js"></script>
-  <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/doubletaptogo.js"></script>
+  
 
 
 </head>
 <body>
+    
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MWHNPC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MWHNPC');</script>
+<!-- End Google Tag Manager -->
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55606331-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
   <header >
   	<section id="contenedorPublicidad">
   		<section id="publicidadL">
@@ -94,21 +117,22 @@
 	      <li><a href="<?php echo home_url(); ?>/category/nuevos-pero-chidos">Nuevos pero chidos</a></li>
 	      <li><a href="<?php echo home_url(); ?>/category/viernes-de-clasicos">Viernes de Clásicos</a></li>
 	      <li><a href="<?php echo home_url(); ?>/category/entrevistas">Entrevistas</a></li>
-	      <li><a href="">Especiales</a></li>
 	      <li><a href="<?php echo home_url(); ?>/category/moda">Moda</a></li>
 	      <li><a href="<?php echo home_url(); ?>/category/cultura">Cooltura</a></li>
 	    </ul>
 	  </li>
 	  <li><a href="<?php echo home_url(); ?>/category/coberturas" aria-haspopup="true">Coberturas</a>
 	    <ul>
+          <li><a href="<?php echo home_url(); ?>/category/vive-latino" aria-haspopup="true">Vive Latino</a></li>
 	      <li><a href="<?php echo home_url(); ?>/category/corona-capital" aria-haspopup="true">Corona Capital 14</a></li>
+        
 	    </ul>
 	  </li>
 	  <li><a href="<?php echo home_url(); ?>/contacto">Contacto</a>
-	    <ul>
+	  <!--  <ul>
  	      <li><a href="">Staff</a></li>
 	      <li><a href="">Colaboradores</a></li>
-	    </ul>
+	    </ul> -->
 	  </li>
 	</ul>
       </nav>

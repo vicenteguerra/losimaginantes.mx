@@ -1,8 +1,13 @@
 
 <?php get_header(); $postcount = 1;?> 
 
-<?php $current_category = single_cat_title("", false);
-    $consulta=""."category_name='".$current_category."'";
+<?php 
+
+    $current_category = single_cat_title("", false);
+    $cat_id = get_cat_ID( $current_category);
+    
+    $query = new WP_Query( 'cat='.$cat_id );
+
 ?>
 
 
@@ -17,9 +22,9 @@
         <section id="categoryTitle">  ► <?php echo $current_category;?>  </section>
         
         
-        <?php query_posts($consulta); ?>
+       
 
-                <?php if ( have_posts() ) : while ( have_posts()&&$postcount<6 ) : the_post(); ?>
+                <?php if ( $query->have_posts() ) : while ( $query->have_posts()&&$postcount<6 ) : the_post(); ?>
                 
                 <!-- Verifica imagen horizontal o vertical -->
             

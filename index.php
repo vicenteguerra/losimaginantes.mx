@@ -120,7 +120,7 @@
   				<section id="tituloPostHome">
   					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>  
                   
-                    <a id="resumen">  <?php echo  excerpt('25'); ?></a>
+                    <a id="resumen">  <?php echo  excerpt('22'); ?></a>
   					 <!-- <p id="autor"> Autor:  </p> -->
                     
 
