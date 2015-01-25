@@ -55,6 +55,7 @@
 <section id="contenedorCatMenu">
                 <section id="bandaCatMenu">
                 </section>
+                <!--
                 <section id="catMenu">
                     <div class="tabs tabs-style-linemove">
                         <nav>
@@ -69,9 +70,9 @@
                             <section id="section-linemove-1"><p>1</p></section>
                             <section id="section-linemove-2"><p>2</p></section>
                             <section id="section-linemove-3"><p>3</p></section>
-                        </div><!-- /content -->
-                    </div><!-- /tabs -->
-                </section>
+                        </div>
+                    </div>
+                </section>-->
                 
             </section>
                 
@@ -90,17 +91,26 @@
   
 <section id="container">
   <section id="publicaciones"> <!--  ********  INICIA PUBLICACIONES ******** -->
+
+
+<div class="pagination">
+   <div class="right"> <?php next_posts_link(' &#10140; ', $new_query->max_num_pages) ?> </div>
+   <div class="left rotate180"> <?php previous_posts_link(' &#10140;') ?></div>
+</div>
+
   	<section id="contenedorPublicaciones">
 
   		<!-- / / / / / / / / / / / / / / /  POST / / / / / / / / / / / // -->
         
         
 
+<?php
+$new_query = new WP_Query();
+$new_query->query('post_type=post&showposts=9'.'&paged='.$paged);
+?>
+        
+       <?php while ($new_query->have_posts()) : $new_query->the_post(); ?> 
 
-        
-         <?php query_posts("category_name=ceremonia,coberturas,conciertos,de-paseo-con,editorial,entrevistas,exclusivas,festival-marvin-2,galeria,la-nota-ilustrada,musica-a-traves-de-imagenes,miercoles-random,muati,nuevos-pero-chidos,papeles-voladores,peliculas,playlist-2,resena-album,resenas,uncategorized,viernes-de-clasicos,vive-latino"); ?>
-        
-  		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   		<section id="publicacion" class="grises" id="post-<?php echo $postcount ?>">
             
@@ -129,14 +139,18 @@
   			</section> <!-- Fin  section textoPublicacion -->
 	  	</section> <!-- Fin  section publicacion -->  	
 
+       		<?php $postcount++; endwhile;  ?>
 
-		<?php $postcount++; endwhile; else: ?>Lo sentimos, no se han encontrado entradas.
-		<?php endif; ?>
-	</section><!-- Fin Contenedor -->
-  	
-      
+
+
+
+    
      
-      
+
+
+	</section><!-- Fin Contenedor -->
+
+  
       
   </section> <!--  ********  TERMINA PUBLICACIONES ******** -->
 </section>  

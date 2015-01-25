@@ -1,4 +1,22 @@
 
+$(document).ready(function(){
+	reloadIndex();
+});
+
+function reloadIndex(){
+	$('.pagination a').bind("click",function(e){
+		
+        e.preventDefault();
+        var link = $(this).attr('href');
+        $('#publicaciones').fadeOut(500, function(){	
+            $(this).load(link + ' #publicaciones', function() {
+                $(this).fadeIn(500);
+                reloadIndex();
+            });
+        });
+    });
+}
+
 
 $(function() {
 var fixadent = $("#menu"), pos = fixadent.offset();
@@ -24,6 +42,10 @@ else if($(this).scrollTop() <= pos.top && fixadent.hasClass('fixed'))
 });
 
 $( '#menuIntL li:has(ul)' ).doubleTapToGo();
+
+
+
+
 
 
 

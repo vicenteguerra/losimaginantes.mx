@@ -42,6 +42,45 @@ header{
 /*  ------------ BANERS  PUBLICIDAD -------------------- */ 
 
 
+div.pagination {
+  display: block;
+  width: 94%;
+  position: relative;
+  margin-left: 3%;
+  margin-top: 30px;
+}
+
+div.pagination a{
+  text-decoration: none;
+  color: #c73157;
+  font-size: 25px;
+  margin: 0 1%;
+}
+
+.rotate180{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.right{
+  float: right;;
+}
+
+.left{
+  float: left;
+  } 5530374125
+
+#loading{
+  width: 100%;
+  background-image: url("images/globo.png") ;
+  height: 700px;
+  background-position: center;
+  background-repeat:no-repeat;
+  display: none;
+}
+
+
 
 
 
@@ -559,7 +598,7 @@ header{
 }
 
      #contenedorPublicaciones{
-    margin-top: 0px;
+    margin-top: -80px;
     display: inline-block;
     text-align: center;
     padding-bottom: 100px;
@@ -671,7 +710,7 @@ header{
     
 
  #contenedorPublicaciones{
-    margin-top: 0px;
+    margin-top: -80px;
     display: inline-block;
     text-align: center;
     padding-bottom: 100px;
@@ -784,7 +823,7 @@ header{
 }
 
   #contenedorPublicaciones{
-    margin-top: 0px;
+    margin-top: -80px;
     display: inline-block;
     text-align: center;
     padding-bottom: 100px;
@@ -878,7 +917,7 @@ header{
         
     }
 
-    footer img{
+    footer .icons{
       padding-left: 7px;
     }
 

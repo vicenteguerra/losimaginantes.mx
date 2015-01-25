@@ -65,16 +65,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     
   <header >
-  	<section id="contenedorPublicidad">
-  		<section id="publicidadL">
-      	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bannerL.gif">
-    </section>
-     <section id="publicidadR">
-      	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bannerR.png">
-    </section>
-
-
-  	</section>
+  	
+<section id="contenedorPublicidad">
+        <section id="publicidadL">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Bahidora.png">
+        </section>
+         <section id="publicidadR">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ViveLatino.png">
+        </section>
+</section>
     
   </header>
   
