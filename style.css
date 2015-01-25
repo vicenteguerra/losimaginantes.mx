@@ -550,6 +550,11 @@ div.pagination a{
 /*  ---- SMARTHPHONE ----*/
 
 @media only screen and (max-width: 750px){
+
+    #slide{
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
    
     #publicacion{
       margin-top: 80px;
@@ -1082,7 +1087,7 @@ div.pagination a{
     }   
 
       #WidgetFacebook{
-          text-align: center;
+      text-align: center;
       width: 300px;
       height: 300px;
    background-color: #fff;
@@ -1124,7 +1129,7 @@ div.pagination a{
   }
    #FacebookWidget{
        width: 240px;
-      height: 240px;
+      height: 280px;
       margin-top: 15px;
       margin-left: 22.5px;
       margin-right: 22.5px;
@@ -1133,14 +1138,14 @@ div.pagination a{
     }   
 
     #WidgetFacebook{
-      width: 240px;
+      width: 240px !important; 
       height: 240px;
         display: inline-block;
     }
 
     #TwitterWidget{
       width: 240px;
-      height: 240px;
+      height: 280px;
       margin-top: 15px;
       margin-left: 22.5px;
       margin-right: 22.5px;
@@ -1150,7 +1155,7 @@ div.pagination a{
 
     #InstagramWidget{
       width: 240px;
-      height: 240px;
+      height: 280px;
       margin-top: 25px;
       margin-left: 22.5px;
       margin-right: 22.5px;
@@ -1244,7 +1249,7 @@ div.pagination a{
 
   .cbp-fwdots {
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
     white-space: nowrap;
     text-align: center;
     width: 100%;
@@ -1354,7 +1359,7 @@ div.pagination a{
 
   .cbp-fwdots {
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
     white-space: nowrap;
     text-align: center;
     width: 100%;

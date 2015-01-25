@@ -8,7 +8,7 @@ function reloadIndex(){
 		
         e.preventDefault();
         var link = $(this).attr('href');
-        $('#publicaciones').fadeOut(500, function(){	
+        $('#publicaciones').fadeOut(900, function(){	
             $(this).load(link + ' #publicaciones', function() {
                 $(this).fadeIn(500);
                 reloadIndex();
