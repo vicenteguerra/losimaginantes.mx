@@ -632,6 +632,8 @@ div.pagination a{
     color: #fff;
     text-align: left;
     height: 100%;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     font-size: 12px;
     line-height: 15px
@@ -744,6 +746,8 @@ div.pagination a{
         color: #fff;
         text-align: left;
         height: 100%;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
         display: inline-flex;
         font-size: 12px;
         line-height: 15px
@@ -857,6 +861,8 @@ div.pagination a{
         color: #fff;
         text-align: left;
         height: 100%;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
         display: inline-flex;
         font-size: 12px;
         line-height: 15px
