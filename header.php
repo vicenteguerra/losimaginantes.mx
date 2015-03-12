@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    
+
 
 
 
@@ -37,12 +37,12 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/modernizr.custom.79639.js"></script>
   <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/modernizr.custom.js"></script>
-  
+
 
 
 </head>
 <body>
-    
+
     <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MWHNPC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -52,7 +52,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MWHNPC');</script>
 <!-- End Google Tag Manager -->
-    
+
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -63,20 +63,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('send', 'pageview');
 
 </script>
-    
+
   <header >
-  	
-<section id="contenedorPublicidad">
-        <section id="publicidadL">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Bahidora.png">
-        </section>
-         <section id="publicidadR">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ViveLatino.png">
-        </section>
-</section>
-    
+
+ <?php get_template_part( 'ads' ); ?>
+
   </header>
-  
+
 
 
 
@@ -89,16 +82,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <nav id="menuInL"  role="navigation"> <!-- Letras en Menu -->
 
       	<!--Responsive Menu -->
-      	
+
 
       		<a href="#menuInL" title="Show navigation" id="mostrar"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Main_Menu.png"></a>
     		<a href="#" title="Hide navigation" id="ocultar"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Main_Menu.png"></a>
 
-      	 
+
 
       <ul id="lmenu" role="navigation">
 	  <li><a href="<?php echo home_url(); ?>/category/noticias">Noticias</a></li>
-	  
+
 	  <li><a href="<?php echo home_url(); ?>/category/papeles-voladores" aria-haspopup="true">Papeles Voladores</a></li>
 	  <li><a href="<?php echo home_url(); ?>/category/resenas" aria-haspopup="true">Reseñas</a>
 	    <ul>
@@ -124,7 +117,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	    <ul>
           <li><a href="<?php echo home_url(); ?>/category/vive-latino" aria-haspopup="true">Vive Latino</a></li>
 	      <li><a href="<?php echo home_url(); ?>/category/corona-capital" aria-haspopup="true">Corona Capital 14</a></li>
-        
+
 	    </ul>
 	  </li>
 	  <li><a href="<?php echo home_url(); ?>/contacto">Contacto</a>
@@ -135,18 +128,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	  </li>
 	</ul>
       </nav>
-      
 
-      
-      
-      
+
+
+
+
     </section>
     <section id="logo"> <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/GloboHeader.png" width="90px" height="90px"> </a> </section>
   </section>
 
-						
 
 
- 
+
+
 
 

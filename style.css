@@ -1909,8 +1909,18 @@ img{max-width: 100%; height: auto;}
 #spotifyList {
     height: 400px;
     width: 100%;
-    padding-top: 40px;
+    margin-top: 40px;
+    text-align: left;
 }
+
+#spotifyLisy > span{
+  font-family: RalewayRegular, Helvetica;
+  font-size: 16pt;
+  color: #c73157;
+  text-align: left;
+  margin-left: 7%;
+}
+
 .embed-container{
     position: relative;
     padding-bottom: 56.25%;

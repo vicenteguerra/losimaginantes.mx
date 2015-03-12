@@ -5,50 +5,50 @@
 <section id="slide">
 
     <div class="ia-container">
-				
+
         <?php query_posts("category_name=noticias"); ?>
-        
-        
-							
+
+
+
 										<figure>
                                             <?php the_post(); ?>
                                             <section id="contImgSlide">
                                                 <img id="<?php echo ajusteImagen();?>" src="<?php echo existeImagen(ajusteImagen()); ?>" alt="image06" />
-                                                
+
                                             </section>
                                             <input type="radio" name="radio-set" />
                                             <figcaption><a href="<?php the_permalink() ?>"><span><?php  the_title(); ?></span></a></figcaption>
-											
-											<figure> 
+
+											<figure>
                                                 <?php the_post(); ?>
                                                 <section id="contImgSlide">
                                                 <img id="<?php echo ajusteImagen();?>" src="<?php echo existeImagen(ajusteImagen()); ?>" alt="image07" />
                                                 </section>
-												
+
 												<input type="radio" name="radio-set" checked="checked"/>
-												<figcaption><a href="<?php the_permalink() ?>"><span><?php  the_title(); ?></span></a></figcaption>											
+												<figcaption><a href="<?php the_permalink() ?>"><span><?php  the_title(); ?></span></a></figcaption>
 
 												<figure>
                                                     <?php the_post(); ?>
-                                                    
+
                                                     <section id="contImgSlide">
                                                 <img id="<?php echo ajusteImagen();?>" src="<?php echo existeImagen(ajusteImagen()); ?>" alt="image08" />
-                                                        
+
                                                     </section>
                                                     <input id="ia-selector-last" type="radio" name="radio-set" />
                                                        <figcaption><a href="<?php the_permalink() ?>"><span><?php  the_title(); ?></span></a></figcaption>
-													
+
 												</figure>
-												
+
 											</figure>
-								
-										</figure>								
-        </div>    
-    
+
+										</figure>
+        </div>
+
 </section>
- 
+
 <!--  -  --- - - --  -- - - --  MENU ACTIVE MUSICA CULTURA  -------------------- - -->
-  
+
 
 
 
@@ -73,9 +73,9 @@
                         </div>
                     </div>
                 </section>-->
-                
+
             </section>
-                
+
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/cbpFWTabs.js"></script>
 		<script>
 			(function() {
@@ -88,7 +88,7 @@
 		</script>
 
 <!--  -  --- - - --  -- - - --  TERMINA MENU ACTIVE MUSICA CULTURA  -------------------- - -->
-  
+
 <section id="container">
   <section id="publicaciones"> <!--  ********  INICIA PUBLICACIONES ******** -->
 
@@ -101,65 +101,65 @@
   	<section id="contenedorPublicaciones">
 
   		<!-- / / / / / / / / / / / / / / /  POST / / / / / / / / / / / // -->
-        
-        
+
+
 
 <?php
 $new_query = new WP_Query();
 $new_query->query('post_type=post&showposts=9'.'&paged='.$paged);
 ?>
-        
-       <?php while ($new_query->have_posts()) : $new_query->the_post(); ?> 
+
+       <?php while ($new_query->have_posts()) : $new_query->the_post(); ?>
 
 
   		<section id="publicacion" class="grises" id="post-<?php echo $postcount ?>">
-            
+
             <!-- Verifica imagen horizontal o vertical -->
-            
-             <? 
-                        $idImagenPost=ajusteImagen();   
+
+             <?
+                        $idImagenPost=ajusteImagen();
             ?>
-            
+
             <!-- Termina verificacion tama;o de imagen -->
-            
+
             <section id="contenedorImagenPost" >
                <a href="<?php the_permalink() ?>" ><img id="<?php echo $idImagenPost; ?>" src="<?php echo existeImagen($idImagenPost); ?>" ></a>  <!-- Si no existe la imagen coloca el globo -->
             </section>
-            
+
   			<section class="textoPublicacion">
   				<section id="tituloPostHome">
-  					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>  
-                  
+  					<h2 id="tituloPublicacion"><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"> <?php the_title(); ?></a></h2>
+
                     <a id="resumen">  <?php echo  excerpt('22'); ?></a>
   					 <!-- <p id="autor"> Autor:  </p> -->
-                    
+
 
   				</section>
-  				
+
   			</section> <!-- Fin  section textoPublicacion -->
-	  	</section> <!-- Fin  section publicacion -->  	
+	  	</section> <!-- Fin  section publicacion -->
 
        		<?php $postcount++; endwhile;  ?>
 
 
 
 
-    
-     
+
+
 
 
 	</section><!-- Fin Contenedor -->
 
-  
-      
+
+
   </section> <!--  ********  TERMINA PUBLICACIONES ******** -->
-</section>  
-  		 
+</section>
+
 
 <section id="Widgets"><!--  ********  INICIA WIDGETS ******** -->
-    
+
     <section id="containerWidgets">
-    
+
         <div id="cbp-fwslider" class="cbp-fwslider">
             <ul>
 
@@ -190,7 +190,7 @@ $new_query->query('post_type=post&showposts=9'.'&paged='.$paged);
                             </ul>
                         </div>
                     </div>
-    
+
     </section>
 
 
@@ -198,19 +198,7 @@ $new_query->query('post_type=post&showposts=9'.'&paged='.$paged);
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.cbpFWSlider.min.js"></script>
 		<script>
 			$( function() {
-				/*
-				- how to call the plugin:s
-				$( selector ).cbpFWSlider( [options] );
-				- options:
-				{
-					// default transition speed (ms)
-					speed : 500,
-					// default transition easing
-					easing : 'ease'
-				}
-				- destroy:
-				$( selector ).cbpFWSlider( 'destroy' );
-				*/
+
 
 				$( '#cbp-fwslider' ).cbpFWSlider();
 
@@ -219,10 +207,10 @@ $new_query->query('post_type=post&showposts=9'.'&paged='.$paged);
 
 
 
-      
-      
 
-    
+
+
+
 
   </section> <!--  ********  TERMINA WIDGETS ******** -->
 

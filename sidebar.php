@@ -81,9 +81,16 @@
 			};
 		</script>
         
-        
         <section id="spotifyList">
-    <section class='embed-container'><iframe src='https://embed.spotify.com/?uri=spotify:user:losimaginantesmx:playlist:6t1MuJvN9VQgJCPKAmYg7p' frameborder='0' allowtransparency='true'></iframe></section>
+        <span>VL15 Viernes</span>
+    <section class='embed-container'><iframe src='https://embed.spotify.com/?uri=spotify:user:marianago:playlist:0vfJDKsw4Gxh6skKdP9IXH' frameborder='0' allowtransparency='true'></iframe></section>
         </section>
+
+        <section id="spotifyList">
+        <span>VL15 Sábado</span>
+    <section class='embed-container'><iframe src='https://embed.spotify.com/?uri=spotify:user:marianago:playlist:1J3lODUGG00hAGDBOQfd94' frameborder='0' allowtransparency='true'></iframe></section>
+        </section>
+
+
        
     </aside>
