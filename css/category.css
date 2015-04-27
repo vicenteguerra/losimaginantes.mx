@@ -41,7 +41,7 @@
         position: relative;
         text-align: center;
     }
-    
+
 }
 
 
@@ -51,7 +51,7 @@
         margin-top: 60px;
         width: 92%;
         background-color: #fff;
-        height: 1475px;
+        padding-bottom: 50px;
         position: relative;
         float: left;
         margin-left: 4%;
@@ -84,9 +84,7 @@
         text-align: center;
         background-color: #aec3c1;
         width: 100%;
-        padding-top: 0;
-        min-height: 1600px;
-        padding-bottom: 100px;
+
     }
 
 
