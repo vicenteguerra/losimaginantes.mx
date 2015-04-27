@@ -123,7 +123,10 @@ $new_query->query('post_type=post&showposts=9'.'&paged='.$paged);
             <!-- Termina verificacion tama;o de imagen -->
 
             <section id="contenedorImagenPost" >
-               <a href="<?php the_permalink() ?>" ><img id="<?php echo $idImagenPost; ?>" src="<?php echo existeImagen($idImagenPost); ?>" ></a>  <!-- Si no existe la imagen coloca el globo -->
+                <span class="date-post"><?php echo get_the_date();  ?></span>
+               <a href="<?php the_permalink() ?>" >
+                  <img id="<?php echo $idImagenPost; ?>" src="<?php echo existeImagen($idImagenPost); ?>" >
+              </a>  <!-- Si no existe la imagen coloca el globo -->
             </section>
 
   			<section class="textoPublicacion">
