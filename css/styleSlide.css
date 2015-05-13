@@ -12,7 +12,7 @@
 	top: 0;
 	left: 160px; /* width of visible piece */
 	width: 680px;
-   
+
 
     box-shadow: 0 0 0 1px rgba(255,255,255,0.6);
 	-webkit-transition: all 0.3s ease-in-out;
@@ -105,7 +105,7 @@
 	padding: 20px;
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-} 
+}
 
 .ia-container input:checked + figcaption,
 .ia-container input:checked:hover + figcaption{
@@ -118,11 +118,12 @@
     -o-transition: all 0.4s ease-in-out 0.5s;
     -ms-transition: all 0.4s ease-in-out 0.5s;
     transition: all 0.4s ease-in-out 0.5s;
-	
+
+
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
     filter: alpha(opacity=99);
 	opacity: 1;
-	
+	font-family: FiraRegular1, Helvetica;;
 	top: 50%;
 }
 
@@ -143,58 +144,58 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .ia-container { 
-		width: 580px; 
+    .ia-container {
+		width: 580px;
 	}
-    
+
     .ia-container figcaption {
     top:30%;
     }
-    
-	
-	.ia-container figure { 
-		left: 128px; 
-		width: 325px; 
+
+
+	.ia-container figure {
+		left: 128px;
+		width: 325px;
 	}
-	
-	.ia-container input { 
-		width: 325px; 
+
+	.ia-container input {
+		width: 325px;
 	}
-	
-	.ia-container input:checked ~ figure { 
-		left: 325px; 
+
+	.ia-container input:checked ~ figure {
+		left: 325px;
 	}
-	
-	.ia-container figcaption span { 
-		font-size: 16px; 
+
+	.ia-container figcaption span {
+		font-size: 16px;
 	}
 }
 
 @media screen and (max-width: 620px) {
-    .ia-container { 
+    .ia-container {
         height: 0px;
         width: 0px;
 	}
-    
+
 	/*
-	.ia-container figure { 
-		left: 20px; 
-		width: 180px; 
+	.ia-container figure {
+		left: 20px;
+		width: 180px;
 	}
-	
-	.ia-container input { 
-		width: 20px; 
+
+	.ia-container input {
+		width: 20px;
 	}
-	
-	.ia-container input:checked ~ figure { 
-		left: 180px; 
+
+	.ia-container input:checked ~ figure {
+		left: 180px;
 	}
-	
-	.ia-container figcaption span { 
-		font-size: 12px; 
-		letter-spacing: 2px; 
-		padding: 10px; 
-		margin-top: -20px; 
-	} 
-    
+
+	.ia-container figcaption span {
+		font-size: 12px;
+		letter-spacing: 2px;
+		padding: 10px;
+		margin-top: -20px;
+	}
+
 }
